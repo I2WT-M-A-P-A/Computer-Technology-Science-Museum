@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="../../CSS/Style.css">
+        <style>
+            #SSD_IMG{
+                height: 350px;
+                float: right;
+                margin-left:670px;
+                margin-right:670px
+            }
 
+
+            #SSD_Table,t{
+                border: 3px solid blue; 
+            }
+            #SSD_Internal{
+                float: right
+            }
+            h1{
+                text-align: center;
+            }
+
+        </style>
     </head>
 
     <body>
 
         <div class="navigation">
-            
+
             <a href="Floppy%20Disks.html">Floppy disks</a>
             <a href="Hard%20drives.html">Hard drives</a>
             <a href="Optical%20Disks.html">Optical Disks</a>
@@ -25,53 +44,100 @@
 
             <h2>What is an SSD</h2>
 
-            A solid-state drive (SSD) is a solid-state storage device that uses integrated circuit assemblies to store data persistently, typically using flash memory, and functioning as secondary storage in the hierarchy of computer storage. It is also sometimes called a solid-state device or a solid-state disk,[1] even though SSDs lack the physical spinning disks and movable read–write heads used in hard disk drives (HDDs) and floppy disks.
+
+            <p>A solid-state drive (SSD) is a solid-state storage device that uses integrated circuit assemblies to store data persistently, typically using flash memory, and functioning as secondary storage in the hierarchy of computer storage. It is also sometimes called a solid-state device or a solid-state disk, even though SSDs lack the physical spinning disks and movable read–write heads used in hard disk drives (HDDs) and floppy disks.</p>
+
+            <img src="../../Images/SSD.jpg" alt="Image of SSDs" id="SSD_IMG">
+            <!-- Maybe add gallery of ssds switching-->
+            <hr>
+
 
             <h2> Differences from other storage medias</h2>
 
-            Compared with electromechanical drives, SSDs are typically more resistant to physical shock, run silently, and have quicker access time and lower latency.SSDs may have a lot faster access time, lower latency, faster write/read speeds but they can't store as much data as hard drives for the same price.SSDs also come in smaller form factors than hard drives.Lastly since SSDs don't have any mechanical parts they have a smaller chance of something breaking down.
+            <p>Compared with electromechanical drives, SSDs are typically more resistant to physical shock, run silently, and have quicker access time and lower latency.SSDs may have a lot faster access time, lower latency, faster write/read speeds but they can't store as much data as hard drives for the same price.SSDs also come in smaller form factors than hard drives.Lastly since SSDs don't have any mechanical parts they have a smaller chance of something breaking down.</p>
 
+            <table id="SSD_Table">
+                <tbody >
+                    <tr>
+                        <th> Characteristic</th>
+                        <th> Average SSD</th>
+                        <th> Average HDD</th>
+                    </tr>
+                    <tr>
+                        <td>Size</td>
+                        <td> 500GB </td>
+                        <td> 1TB</td>    
+                    </tr>
+                    <tr>
+                        <td>Write speed </td>
+                        <td>520 mb/s</td>
+                        <td>150 mb/s</td>
+                    </tr>
+                    <tr>
+                        <td>Read speed</td>
+                        <td>550 mb/s</td>
+                        <td>150 mb/s</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>50-80€</td>
+                        <td>40-45€</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <img src="../../Images/hdd%20vs%20ssd.jpg" alt="HDD and SSD side by side" id="SSDvsHDD">
+            <hr>
             <h2>Components </h2>
+
+            <img src="../../Images/internal-ssd.png" alt="Internal of SSD" id="SSD_Internal">
 
             <h3> Flash Memory Components</h3>
 
-            Individual Flash die or devices using either NAND or NOR technology. Densities vary from 2GBytes to 64GBytes.
+            <p>Individual Flash die or devices using either NAND or NOR technology. Densities vary from 2GBytes to 64GBytes.</p>
 
             <h3> Buffer/Cache Components</h3>
 
-            This is high speed RAM memory components used for speed matching and to increased data throughput.
+            <p>This is high speed RAM memory components used for speed matching and to increased data throughput.</p>
 
             <h3> SSD Controller</h3>
 
-            The electronic component(s) that provide SSD device level interfacing and firmware execution. Included is an embedded processor, data ROM, data RAM, flash component interfacing, error correction code (ECC), wear leveling/TRIM, and security features.
+            <p>The electronic component(s) that provide SSD device level interfacing and firmware execution. Included is an embedded processor, data ROM, data RAM, flash component interfacing, error correction code (ECC), wear leveling/TRIM, and security features.</p>
 
             <h3>Interface Components</h3>
 
-            The electrical interface between the host processor and the SSD peripheral device.
+            <p>The electrical interface between the host processor and the SSD peripheral device.</p>
+            <br><br><br>
+            <hr>
+            <h2> What is NAND flash memory</h2>
 
-            <h3> What is NAND flash memory</h3>
+            <p>NAND is the most common type of flash memory. It is also used in USB flash drives, and SD cards. NAND memory is non-volatile, meaning it retains stored data even when the power is turned off.
+                NAND flash memory contains an integrated circuit that uses NAND gates to store data in memory cells.Devices with NAND flash memory write and erase data faster and store significantly more data than NOR flash memory</p>
 
-            NAND is the most common type of flash memory. It is also used in USB flash drives, and SD cards. NAND memory is non-volatile, meaning it retains stored data even when the power is turned off.
-            NAND flash memory contains an integrated circuit that uses NAND gates to store data in memory cells.Devices with NAND flash memory write and erase data faster and store significantly more data than NOR flash memory
+            <img src="../../Images/NAND%20FLASH.png" alt="NAND FLASH image">
 
-            <h3> What is NOR flash memory</h3>
+            <h2> What is NOR flash memory</h2>
 
-            NOR flash is most often used in applications where individual bytes of data need to be written and read, and is most often used where random access and execute-in-place access techniques are required. As each read access takes the same amount of time, sequential read access is no faster than random access. Erase/program cycles can often be long.
-            <br><br>
-            Today’s NOR flash devices are available with capacities in the megabits and low gigabits range. Depending on the device, individual bytes or sectors must be erased before writing data, with erase/program speeds typically below 1 MB/s.
+            <p>NOR flash is most often used in applications where individual bytes of data need to be written and read, and is most often used where random access and execute-in-place access techniques are required. As each read access takes the same amount of time, sequential read access is no faster than random access. Erase/program cycles can often be long.</p>
 
-            <h3>How its made</h3>
+            <p>Today’s NOR flash devices are available with capacities in the megabits and low gigabits range. Depending on the device, individual bytes or sectors must be erased before writing data, with erase/program speeds typically below 1 MB/s.</p>
+            <img src="../../Images/Nor%20Flash.jpg" alt="nor flash by intel">
+            <h2>How its made</h2>
+            <hr>
 
-            Solid state drives use flash memory chips to store information, an SSD is made of several memory chips installed on a circuit board. Micron manufactures the flash memory chips in‑house on silicon wafers.
+            <p>Solid state drives use flash memory chips to store information, an SSD is made of several memory chips installed on a circuit board. Micron manufactures the flash memory chips in‑house on silicon wafers.</p>
 
-            Because the silicon wafers are susceptible to contamination, robots move the wafers through more than 800 operations, which take more than a month to complete. As the wafers move through the process, many layers of materials are added to the wafer. These include conductive materials such as copper and non-conductive materials like silicone dioxide. After each layer of material is applied, the wafer is coated with light-sensitive fluid, then ultraviolet light is flashed on to it through a glass stencil of the electrical circuitry pattern. Where the light contacts the materials, they break down and dissolve. Where the materials are shielded by the stencil, they remain intact, which prints the circuitry pattern on the wafer. Chemical baths then wash away any residual material.
+            <p>Because the silicon wafers are susceptible to contamination, robots move the wafers through more than 800 operations, which take more than a month to complete. As the wafers move through the process, many layers of materials are added to the wafer. These include conductive materials such as copper and non-conductive materials like silicone dioxide. After each layer of material is applied, the wafer is coated with light-sensitive fluid, then ultraviolet light is flashed on to it through a glass stencil of the electrical circuitry pattern. Where the light contacts the materials, they break down and dissolve. Where the materials are shielded by the stencil, they remain intact, which prints the circuitry pattern on the wafer. Chemical baths then wash away any residual material.</p>
 
-            After printing, each 30-centimeter wafer yields hundreds of chips, which must be sliced apart. After the chips are cut apart, they are inserted into a protective plastic housing. 
+            <p>After printing, each 30-centimeter wafer yields hundreds of chips, which must be sliced apart. After the chips are cut apart, they are inserted into a protective plastic housing.</p>
 
-            Large circuit boards are covered with tin alloy solder paste in the areas the memory chips and other components will be attached. A robot attaches the components to the board, then the assembled boards go into an oven that fuses the components to the board.
+            <p>Large circuit boards are covered with tin alloy solder paste in the areas the memory chips and other components will be attached. A robot attaches the components to the board, then the assembled boards go into an oven that fuses the components to the board.</p>
         </div>
+        <hr>
 
         <div class="footer">
+            Created by the M.A.P.A team 2020.
 
         </div>
     </body>
