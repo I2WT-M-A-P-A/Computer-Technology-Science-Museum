@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <!--        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">-->
         <style>
-            .Disk{
-                display: block;
+            .FirstGenSlide,.ThirdGenSlide{
+                list-style-type: none;
+            }
+            ul.FirstGenSlide li{
+                width:535px;
+                margin-left: auto;
                 margin-right: auto;
+                display: none;
+            }
+
+            .Disk{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            #previous1{
+                position:absolute;
+                top: 1530px;
+                font-size: 50px;
+                left:450px;
+            }
+            #next1{
+                position:absolute;
+                top: 1530px;
+                right:450px;
+                font-size: 50px
+            }
+            #HVD{
+                margin-right: 300px;
                 margin-left: auto;
             }
-        
-        
+            ul.ThirdGenSlide li{
+                width:535px;
+                margin-left: auto;
+                margin-right: auto;
+                display: none;
+            }
+            #previous2{
+                font-size:50px;
+                position: absolute;
+                top:3000px;
+                left:450px;
+            }
+            #next2{
+                position:absolute;
+                top: 3000px;
+                right:450px;
+                font-size: 50px
+            }
         </style>
     </head>
 
     <body>
 
         <div class="navigation">
-            
+
             <a href="Floppy%20Disks.html">Floppy disks</a>
             <a href="Hard%20drives.html">Hard drives</a>
             <a href="Optical%20Disks.html">Optical Disks</a>
@@ -33,7 +76,7 @@
             <h2>What are optical disks</h2>
 
             On optical discs such as compact discs (CDs) and digital videodiscs (DVDs), information is stored as a series of lands, or flat areas, and pits.
-            
+
             <img src="../../Images/CD.png" alt="Image of a random optical disk" class="Disk">
 
             <h2>How do they work</h2>
@@ -67,19 +110,43 @@
                 <li>GD-ROM</li>
                 <li>Laser Disk</li>
             </ul>
-            
-            <img src="../../Images/LDDVDComparison-mod.png" alt="laser disk vs dvd" class="disk">
-            <img src="../../Images/super%20video%20cd.jpg" alt="super video cd" class="disk">
-            <img src="../../Images/gd-rom.png" alt="gd rom" class="disk">
-            <img src="../../Images/cd2.png" alt="image of a cd" class="disk">
-            
-            
-            
             And others
-<!--Make it into a gallery like in class 25/11-->
+
+            <ul class="FirstGenSlide">
+
+                <li class="FirstGItem">
+                    <h3>Laser disk and dvd side by side</h3>
+                    <img src="../../Images/LDDVDComparison-mod.png">
+                </li>
+
+                <li class="FirstGItem">
+                    <h3> Super Video CD</h3>
+                    <img src="../../Images/super%20video%20cd.jpg">
+                </li>
+
+                <li class="FirstGItem">
+                    <h3>GD-Rom</h3>
+                    <img src="../../Images/gd-rom.png">
+                </li>
+
+                <li class="FirstGItem">
+                    <h3>CD</h3>
+                    <img src="../../Images/cd2.png">
+                </li>
+            </ul>
+
+            <a id="previous1" > &lt;</a>
+            <a id="next1" > &gt;</a>
+
+            <br><br><br>
+
+
+            <!--Make it into a gallery like in class 25/11-->
             <h3>2nd generation</h3>
 
-            Second-generation optical discs were for storing great amounts of data, including broadcast-quality digital video. Such discs usually are read with a visible-light laser (usually red).In the DVD format, this allows 4.7 GB storage on a standard 12 cm, single-sided, single-layer disc; alternatively, smaller media, such as the DataPlay format, can have capacity comparable to that of the larger, standard compact
+            <p>
+                Second-generation optical discs were for storing great amounts of data, including broadcast-quality digital video. Such discs usually are read with a visible-light laser (usually red).In the DVD format, this allows 4.7 GB storage on a standard 12 cm, single-sided, single-layer disc; alternatively, smaller media, such as the DataPlay format, can have capacity comparable to that of the larger, standard compact
+            </p>
 
             <h4> Types of second generation optical disks</h4>
 
@@ -97,13 +164,15 @@
                 <li>Ultra Density Optical</li>
             </ul>
             And others
-            <img src="../../Images/dvd.png" alt="dvd image">
-            <img src="../../Images/DVD-Ram.png" alt="DVD-Ram image" id="">
-            
+            <br>
+            <img src="../../Images/dvd.jpg" alt="dvd image" class="Disk">
+
 
             <h3>3rd generation</h3>
 
-            Third-generation optical discs are used for distributing high-definition video and videogames and support greater data storage capacities, accomplished with short-wavelength visible-light lasers and greater numerical apertures. Blu-ray Disc and HD DVD uses blue-violet lasers and focusing optics of greater aperture, for use with discs with smaller pits and lands, thereby greater data storage capacity per layer. In practice, the effective multimedia presentation capacity is improved with enhanced video data compression codecs such as H.264/MPEG-4 AVC and VC-1.
+            <p>
+                Third-generation optical discs are used for distributing high-definition video and videogames and support greater data storage capacities, accomplished with short-wavelength visible-light lasers and greater numerical apertures. Blu-ray Disc and HD DVD uses blue-violet lasers and focusing optics of greater aperture, for use with discs with smaller pits and lands, thereby greater data storage capacity per layer. In practice, the effective multimedia presentation capacity is improved with enhanced video data compression codecs such as H.264/MPEG-4 AVC and VC-1.
+            </p>
 
             <h4> Types of third generation optical disks</h4>
 
@@ -112,33 +181,154 @@
                 <li>HD DVD (discontinued disc format, up to 51 GB triple layer)</li>
                 <li>HD VMD</li>            
             </ul>
-            <img src="../../Images/blu-ray-disc-icon.png" alt="Blue ray disk" id="">
-            <img src="../../Images/hd-dvd.png" alt="HD-Dvd disc" id="">
+
+            <ul class="ThirdGenSlide">
+
+                <li class="TGI">
+                    <h3> Blue ray disk</h3>
+                    <img src="../../Images/blu-ray-disc-icon.png" alt="Blue ray disk">
+
+                </li>
+
+                <li class="TGI">
+                    <h3>HD-DvD Disk</h3>
+                    <img src="../../Images/hd-dvd.png" alt="HD-Dvd disc">
+                </li>
+                <a id="previous2" > &lt;</a>
+                <a id="next2" > &gt;</a>
+            </ul>
 
             <h3>4th generation</h3>
 
-            The following formats go beyond the current third-generation discs and have the potential to hold more than one terabyte (1 TB) of data and at least some are meant for cold data storage in data centers:
+            <p>
+                The following formats go beyond the current third-generation discs and have the potential to hold more than one terabyte (1 TB) of data and at least some are meant for cold data storage in data centers:
+            </p>
 
             <ul>
                 <li>Archival Disc</li>
                 <li>Holographic Versatile Disc</li>
                 <li>Ultra HD Bluray</li>
             </ul>
-            <img src="../../Images/Hvd_disc.jpg" alt="Holographicversatile disc" id="">
+
             Announced but not released
-            
+
             <ul>
-            <li>LS-R</li>
+                <li>LS-R</li>
                 <li>Stacked Volumetric Optical Disk</li>
                 <li>5D DVD</li>
                 <li>3D optical data storage</li>
-            
+
             </ul>
+            <p>Image of an Holographic versatile disc</p>
+            <img src="../../Images/Hvd_disc.jpg" alt="Holographicversatile disc" id="HVD">
+
+            <br>
+
         </div>
 
         <div class="footer">
 
         </div>
+        <script>
+
+            var CMG1=0;
+            var firstgenslideEls = document.getElementsByClassName("FirstGItem");
+            firstgenslideEls[CMG1].style.display="block";
+
+
+            var NextPlace = function()
+            {
+                firstgenslideEls[CMG1].style.display="none";
+                CMG1++;
+                if (CMG1===firstgenslideEls.length)
+                {
+                    CMG1=0;
+                }
+                firstgenslideEls[CMG1].style.display="block";
+            }
+
+            var PreviousPlace = function()
+            {
+                firstgenslideEls[CMG1].style.display="none";
+                CMG1--;
+                if (CMG1<0)
+                {
+                    CMG1=firstgenslideEls.length-1;
+                }
+                firstgenslideEls[CMG1].style.display="block";
+            }
+
+            var NextPlaceArrowEl = document.getElementById("next1");
+            var PreviousPlaceArrowEl = document.getElementById("previous1");
+
+            NextPlaceArrowEl.addEventListener("click",NextPlace);
+            PreviousPlaceArrowEl.addEventListener("click",PreviousPlace);
+
+            //            var IMG=0;
+            //            var TSE=document.getElementsByClassName("TGI");
+            //            TSE[IMG].style.display="block";
+            //
+            //            var NextPlace2 = function()
+            //            {
+            //                TSE[IMG].style.display="none";
+            //                IMG++;
+            //                if (IMG === TSE.length)
+            //                {
+            //                    IMG = 0;
+            //                }
+            //                TSE[IMG].style.display="block";
+            //            }
+            //            
+            //            var PreviousPlace2 = function()
+            //            {
+            //                TSE[IMG].style.display="block";
+            //                IMG--;
+            //                if (IMG<0)
+            //                {
+            //                    IMG=TSE.length-1;
+            //                }
+            //                TSE[IMG].style.display="block";
+            //            }
+            //
+            //            var NextPlaceArrowEl2 = document.getElementById("next2");
+            //            var PreviousPlaceArrowEl2 = document.getElementById("previous2");
+            //
+            //            NextPlaceArrowEl2.addEventListener("click",NextPlace2);
+            //            PreviousPlaceArrowEl2.addEventListener("click",PreviousPlace2);
+            var CMG2=0;
+            var TSE = document.getElementsByClassName("TGI");
+            TSE[CMG1].style.display="block";
+
+
+            var NextPlace1 = function()
+            {
+                TSE[CMG2].style.display="none";
+                CMG2++;
+                if (CMG2===TSE.length)
+                {
+                    CMG2=0;
+                }
+                TSE[CMG2].style.display="block";
+            }
+
+            var PreviousPlace1 = function()
+            {
+                TSE[CMG2].style.display="none";
+                CMG2--;
+                if (CMG2<0)
+                {
+                    CMG2=TSE.length-1;
+                }
+                TSE[CMG2].style.display="block";
+            }
+
+            var NextPlaceArrowEl1 = document.getElementById("next2");
+            var PreviousPlaceArrowEl1 = document.getElementById("previous2");
+
+            NextPlaceArrowEl1.addEventListener("click",NextPlace1);
+            PreviousPlaceArrowEl1.addEventListener("click",PreviousPlace1);
+
+        </script>
     </body>
 
 
