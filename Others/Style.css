@@ -1,9 +1,11 @@
 .navbar {
     overflow: hidden;
     background-color: #333;
-    margin-left: 143.5px;
-    margin-right: 143.5px;
-    margin-top: 0px
+    font-family: Arial;
+    margin-right: 144px;
+    margin-left: 144px;
+    margin-top: -8px;
+    margin-bottom: -21px;
 }
 
 .navbar a {
@@ -11,17 +13,19 @@
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 13px;
     text-decoration: none;
 }
 
-.subnav {
+.dropdown {
     float: left;
     overflow: hidden;
+    padding-top: 0px;
+    margin-top: -13px;
 }
 
-.subnav .subnavbtn {
-    font-size: 16px;
+.dropdown .dropbtn {
+    font-size: 14px;
     border: none;
     outline: none;
     color: white;
@@ -31,32 +35,32 @@
     margin: 0;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
 }
 
-.subnav-content {
+.dropdown-content {
     display: none;
     position: absolute;
-    left: 0;
-    background-color: red;
-    width:100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-left: 152px;
-    margin-right: 152px;
 }
 
-.subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-}
-
-.subnav-content a:hover {
-    background-color: #eee;
+.dropdown-content a {
+    float: none;
     color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-.subnav:hover .subnav-content {
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
 }
