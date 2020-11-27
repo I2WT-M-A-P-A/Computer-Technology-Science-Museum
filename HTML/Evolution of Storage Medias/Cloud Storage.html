@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+        <style>
+            
+            
+            #Cloud_image{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #backup{
+                margin-left: auto;
+                margin-right: auto;
+                display:block;
+            }
+            
+
+
+        </style>
 
     </head>
 
     <body>
 
         <div class="navigation">
-            
+
             <a href="Floppy%20Disks.html">Floppy disks</a>
             <a href="Hard%20drives.html">Hard drives</a>
             <a href="Optical%20Disks.html">Optical Disks</a>
@@ -17,64 +34,72 @@
             <a href="SD%20Cards.html">SD Cards</a>
             <a href="Cloud%20Storage.html">Cloud Storage</a>
             <a href="../References.html">Reference List</a>
-            
+
         </div>
 
         <div class="contents">
-            
+
             <h1>Cloud storage</h1>
-            
+
             <h2>What is cloud storage</h2>
-            
+
             Cloud storage is a service model in which data is transmitted and stored on remote storage systems, where it is maintained, managed, backed up and made available to users over a network (typically the internet). Users generally pay for their cloud data storage on a per-consumption, monthly rate or a set ammount of gigabytes for free. Although the per-gigabyte cost has been radically driven down, cloud storage providers have added operating expenses that can make the technology considerably more expensive to use.
-            
-            <h2>Architecture</h2>
-            
+            <br><br>
+
+            <img src="../../Images/cloud%20storage.jpg" alt="Cloud storage image" id="Cloud_image">
+
+            <h2 id="Architecture">Architecture</h2>
+
             Cloud storage is based on highly virtualized infrastructure and is like broader cloud computing in terms of interfaces, near-instant elasticity and scalability, multi-tenancy, and metered resources. Cloud storage services can be utilized from an off-premises service (Amazon S3) or deployed on-premises (ViON Capacity Services)
             <br>
             Cloud storage typically refers to a hosted object storage service, but the term has broadened to include other types of data storage that are now available as a service, like block storage.
-            
+
             <br>
-            Object storage services like Amazon S3, Oracle Cloud Storage and Microsoft Azure Storage, object storage software like Openstack Swift, object storage systems like EMC Atmos, EMC ECS and Hitachi Content Platform, and distributed storage research projects like OceanStore[6] and VISION Cloud[7] are all examples of storage that can be hosted and deployed with cloud storage characteristics.
+            Object storage services like Amazon S3, Oracle Cloud Storage and Microsoft Azure Storage, object storage software like Openstack Swift, object storage systems like EMC Atmos, EMC ECS and Hitachi Content Platform, and distributed storage research projects like OceanStore and VISION Cloud are all examples of storage that can be hosted and deployed with cloud storage characteristics.
 
             <h2>Benefits of cloud storage</h2>
-            
+
             <h3>Pay for what is used</h3>
-            
+
             With a cloud storage service, customers only pay for the storage they actually use so there's no need for big capital expenses. While cloud storage costs are recurring rather than a one-time purchase, they are so low that even as an ongoing expense they may still be less than the cost of maintaining an in-house system.
-            
+
             <h3>Global availability.</h3>
-            
+
             Cloud storage is typically available from any system anywhere at any time. One does not have to worry about operating system capability or complex allocation processes.
-            
+
             <h3>Ease of use</h3>
-            
-             Cloud storage is easier to access and use, so developers, software testers and business users can get up and running quickly without have to wait for IT to allocate and configure storage resources.
-            
+
+            Cloud storage is easier to access and use, so developers, software testers and business users can get up and running quickly without have to wait for IT to allocate and configure storage resources.
+
             <h2>Drawbacks</h2>
-            
+
             <h3>Security</h3>
-            
+
             When data has been distributed it is stored at more locations increasing the risk of unauthorized physical access to the data. For example, in cloud based architecture, data is replicated and moved frequently so the risk of unauthorized data recovery increases dramatically. Such as in the case of disposal of old equipment, reuse of drives, reallocation of storage space. The manner that data is replicated depends on the service level a customer chooses and on the service provided. When encryption is in place it can ensure confidentiality. Crypto-shredding can be used when disposing of data (on a disk).
             <br><br>
-            
+
             Another concern is that once data leaves a company's premises, the company no longer has control over how it's handled and stored.
             <br><br>
-            
+
             And with cyber attacks nowadays a remote server could always be hacked into and data could be stolen from it or a virus could harm it
-            
+
             <h2>Uses</h2>
-            
+
             <h3>Backup</h3>
-            
-            The most common use cases are cloud backup, disaster recovery and archiving infrequently accessed data. A greater number of customers also use cloud storage services for DevOps as a capital cost-cutting measure. They can just spin up the compute and storage resources for the duration of the project development and testing, and then spin them down when it ends.
-            
-            <h3>Busineses</h3>
-            
-            Buisineses can move their local servers to a cloud storage/server so they have less maintenance costs.
-            
-            <p> A lot of people consider cloud storage,computing etc. being the future and it certainely seems to be the case</p>
-            
+             
+            <span id="backup_info">
+                <p>The most common use cases are cloud backup, disaster recovery and archiving infrequently accessed data. .</p>
+            </span>               
+             <img src="../../Images/backup.jpg" alt="backup" id="backup">
+
+            <div id="business">
+                <h3>Busineses</h3>
+
+                Buisineses can move their local servers to a cloud storage/server so they have less maintenance costs.
+
+                <p> A lot of people consider cloud storage,computing etc. being the future and that certainely seems to be the case</p>
+            </div>
+
         </div>
 
         <div class="footer">
