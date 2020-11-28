@@ -3,6 +3,11 @@
     margin: auto;
     background: blue;
 }
+.footer{
+    width:1600px;
+    margin:auto;
+    background:red;
+}
 
 .navbar {
     overflow: hidden;
@@ -11,7 +16,7 @@
     margin-right: 144px;
     margin-left: 144px;
     margin-top: -8px;
-    margin-bottom: -21px;
+    margin-bottom: -26px;
 }
 
 .navbar a {
