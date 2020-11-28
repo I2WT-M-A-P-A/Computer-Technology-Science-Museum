@@ -3,7 +3,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
         <style>
-            
+            body{
+                font-size: 1.18em;
+            }
             #Cloud_image{
                 display: block;
                 margin-left: auto;
@@ -14,9 +16,42 @@
                 margin-right: auto;
                 display:block;
             }
+            .polaroid{
+                background-color: blueviolet;
+                box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                width: 26.75%;
+                margin-left: auto;
+                display: block;
+                float:right;
+            }
+            .contents,{
+                margin-top: -29px;
+            }
 
-
-
+            #whatis{
+                margin-bottom: 150px;
+            }
+            .polaroid2{
+                background-color: blueviolet;
+                box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin-bottom: 25px;
+                width: 26.75%;
+                margin-left: auto;
+                display: inline-block;
+                float:right;
+            }
+            #backupP{
+                margin-bottom: 140px;
+            }
+            #video{
+                margin-left: 1040px;
+                margin-top: -100px;
+                display:inline-block;
+            }
+            h1{
+                text-align: center;
+            }
         </style>
 
     </head>
@@ -44,31 +79,31 @@
                     <a href="../GraphicCards/generation1.html">2nd generation of GPUs</a>
                     <a href="../GraphicCards/gen3.html">3rd generation of GPUs</a>               
                 </div>
-</div>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn"><a href="../EvolutionOfComputers/EvolutionOfComputers.html">Evolution of Computers</a></button>
                 <div class="dropdown-content">
                     <a></a>
                 </div>
-</div>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn"><a href="../CPU/CPU.html">Evolution of CPUs</a></button>
                 <div class="dropdown-content">
                     <a></a>
                 </div>                    
-</div>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of DOS/Windows</a></button>
                 <div class="dropdown-content">
                     <a></a>
                 </div>                    
-</div>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of Unix/Linux</a></button>
                 <div class="dropdown-content">
                     <a></a>
                 </div>                    
-</div>
+            </div>
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of Malware</a></button>
                 <div class="dropdown-content">
@@ -94,67 +129,142 @@
 
             <h2>What is cloud storage</h2>
 
-            Cloud storage is a service model in which data is transmitted and stored on remote storage systems, where it is maintained, managed, backed up and made available to users over a network (typically the internet). Users generally pay for their cloud data storage on a per-consumption, monthly rate or a set ammount of gigabytes for free. Although the per-gigabyte cost has been radically driven down, cloud storage providers have added operating expenses that can make the technology considerably more expensive to use.
-            <br><br>
+            <img src="../../Images/cloud%20storage.jpg" alt="Cloud storage image" class="polaroid">
 
-            <img src="../../Images/cloud%20storage.jpg" alt="Cloud storage image" id="Cloud_image">
+            <p id="whatis">
+                Cloud storage is a service model in which data is transmitted and stored on remote storage systems, where it is maintained, managed, backed up and made available to users over a network (typically the internet).
+                <br>
+                Users generally pay for their cloud data storage on a per-consumption, monthly rate or a set ammount of gigabytes for free. <br>
+                Although the per-gigabyte cost has been radically driven down, cloud storage providers have added operating expenses that can make the technology considerably more expensive to use.
+            </p>
+
 
             <h2 id="Architecture">Architecture</h2>
 
-            Cloud storage is based on highly virtualized infrastructure and is like broader cloud computing in terms of interfaces, near-instant elasticity and scalability, multi-tenancy, and metered resources. Cloud storage services can be utilized from an off-premises service (Amazon S3) or deployed on-premises (ViON Capacity Services)
-            <br>
-            Cloud storage typically refers to a hosted object storage service, but the term has broadened to include other types of data storage that are now available as a service, like block storage.
+            <p>
+                Cloud storage is based on highly virtualized infrastructure and is like broader cloud computing in terms of interfaces, near-instant elasticity and scalability, multi-tenancy, and metered resources.<br> These services can be utilized from an off-premises service (Amazon S3) or deployed on-premises (ViON Capacity Services)
 
-            <br>
-            Object storage services like Amazon S3, Oracle Cloud Storage and Microsoft Azure Storage, object storage software like Openstack Swift, object storage systems like EMC Atmos, EMC ECS and Hitachi Content Platform, and distributed storage research projects like OceanStore and VISION Cloud are all examples of storage that can be hosted and deployed with cloud storage characteristics.
+            </p>
+            <p>
+                Cloud storage typically refers to a hosted object storage service, but the term has broadened to include other types of data storage that are now available as a service, like block storage.
+
+            </p>
+
+            <p>
+                Object storage services like Amazon S3, Oracle Cloud Storage and Microsoft Azure Storage, object storage software like Openstack Swift, object storage systems like EMC Atmos, EMC ECS and Hitachi Content Platform, and distributed storage research projects like OceanStore and VISION Cloud are all examples of storage that can be hosted and deployed with cloud storage characteristics.
+            </p>
 
             <h2>Benefits of cloud storage</h2>
 
             <h3>Pay for what is used</h3>
 
-            With a cloud storage service, customers only pay for the storage they actually use so there's no need for big capital expenses. While cloud storage costs are recurring rather than a one-time purchase, they are so low that even as an ongoing expense they may still be less than the cost of maintaining an in-house system.
+            <p>
+                With a cloud storage service, customers only pay for the storage they actually use so there's no need for big capital expenses. 
+                <br>
+                While cloud storage costs are recurring rather than a one-time purchase, they are so low that even as an ongoing expense they may still be less than the cost of maintaining an in-house system.
+
+            </p>
 
             <h3>Global availability.</h3>
 
-            Cloud storage is typically available from any system anywhere at any time. One does not have to worry about operating system capability or complex allocation processes.
+            <p>Cloud storage is typically available from any system anywhere at any time. One does not have to worry about operating system capability or complex allocation processes.</p>
 
             <h3>Ease of use</h3>
 
-            Cloud storage is easier to access and use, so developers, software testers and business users can get up and running quickly without have to wait for IT to allocate and configure storage resources.
+            <p>
+                Cloud storage is easier to access and use, so developers, software testers and business users can get up and running quickly without have to wait for IT to allocate and configure storage resources.
+            </p>
 
             <h2>Drawbacks</h2>
 
             <h3>Security</h3>
 
-            When data has been distributed it is stored at more locations increasing the risk of unauthorized physical access to the data. For example, in cloud based architecture, data is replicated and moved frequently so the risk of unauthorized data recovery increases dramatically. Such as in the case of disposal of old equipment, reuse of drives, reallocation of storage space. The manner that data is replicated depends on the service level a customer chooses and on the service provided. When encryption is in place it can ensure confidentiality. Crypto-shredding can be used when disposing of data (on a disk).
-            <br><br>
+            <p>
+                When data has been distributed it is stored at more locations increasing the risk of unauthorized physical access to the data. 
+                <br>
+                For example, in cloud based architecture, data is replicated and moved frequently so the risk of unauthorized data recovery increases dramatically. <br>Such as in the case of disposal of old equipment, reuse of drives, reallocation of storage space. <br>The manner that data is replicated depends on the service level a customer chooses and on the service provided. When encryption is in place it can ensure confidentiality.<br> Crypto-shredding can be used when disposing of data (on a disk).
+            </p>
 
-            Another concern is that once data leaves a company's premises, the company no longer has control over how it's handled and stored.
-            <br><br>
+            <p>
+                Another concern is that once data leaves a company's premises, the company no longer has control over how it's handled and stored.
+            </p>
 
-            And with cyber attacks nowadays a remote server could always be hacked into and data could be stolen from it or a virus could harm it
+            <p>
+                And with cyber attacks nowadays a remote server could always be hacked into and data could be stolen from it or a virus could harm it
+            </p>
 
             <h2>Uses</h2>
 
             <h3>Backup</h3>
 
-            <span id="backup_info">
-                <p>The most common use cases are cloud backup, disaster recovery and archiving infrequently accessed data. .</p>
-            </span>               
-            <img src="../../Images/backup.jpg" alt="backup" id="backup">
+            <img src="../../Images/backup.jpg" alt="backup" class="polaroid2">
 
-            <div id="business">
-                <h3>Busineses</h3>
+            <p id="backupP">
+                The most common use cases are cloud backup, disaster recovery and archiving infrequently accessed data.
+                <br>
+                You can backup old files you may want in the future but don't need right now.You can even backup your whole system <br>
+                to be safe from ransomware attacks.
+                <br>
+            </p>              
 
+
+            <h3>Busineses</h3>
+            <p>
                 Buisineses can move their local servers to a cloud storage/server so they have less maintenance costs.
+                <br>
+                Also they can backup all their data there and also have extra ease of mind since cloud services usually <br>
+                offer some kind of rewind feature in case anything goes wrong
+            </p>
 
-                <p> A lot of people consider cloud storage,computing etc. being the future and that certainely seems to be the case</p>
+            <h2> Commonly used cloud websites/apps/services </h2>
+
+            <h3>Dropbox</h3>
+
+            <p>
+                Dropbox is one of the most well known cloud storage services along with others.Its initial release was back in september 11th, 2008 and it is operational today.It keeps your files safe with 256-bit Advanced Encryption Standard (AES) technology and provides option for 2 step authentication to prevent hackers from accesing your account.
+                <br>
+                You can use dropbox online, with desktop app or even on mobile on various operating systems such as, windows, Mac, linux etc.           
+            </p>
+
+            <p>
+                Dropbox offers 2GB free storage for free and you can pay monthly or yearly for a 2TB (12$/month) plan which also offers other features such as but not only, computer backup, dropbox passwords, dropbox vault and others            
+            </p>
+
+            <p>
+                Dropbox also has services for companies with many features such as, office integration, file locking, admin console and audit log and others
+            </p>
+
+            You can find the website here: <a href="https://www.dropbox.com/?_hp=c">Click here to go to dropbox.com</a>
+
+            <h3>Mega</h3>
+
+            <p>
+                Mega is a not so well known as dropbox or google drive but it is very good.It provides 50 GB free cloud storage for free and you can pay up to 30€ a month for 16 TB storage space and transfer quota.
+                <br>
+                Mega keeps your files safe by having user controlled end-to-end encryption and other measures which are explained at their website.
+            </p>
+
+            <p>
+                Mega also provides its services to buisenesses for 10$ a month with all kinds of cool features such as:
+            </p>
+            <ul>
+                <li>priority support</li>
+                <li>unlimited file recovery and continuous file versioning</li>
+                <li>user management tools and others</li>
+            </ul>
+
+            You can find the website <a href="https://mega.nz/"> here</a>
+ <p>In this 6 minute video you can see the rankings of various cloud storage services throughout the years</p>
+            <div id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HZZ4XS1K86U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+           
+
 
         </div>
 
         <div class="footer">
-
+            sdgsdgds
         </div>
     </body>
 
