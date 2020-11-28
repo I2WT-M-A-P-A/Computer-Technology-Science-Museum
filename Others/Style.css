@@ -1,3 +1,9 @@
+.contents {
+    width: 1600px;
+    margin: auto;
+    background: blue;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #333;
