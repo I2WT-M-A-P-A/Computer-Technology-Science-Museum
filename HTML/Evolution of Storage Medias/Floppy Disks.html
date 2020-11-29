@@ -3,8 +3,62 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
         <style>
+            body{
+                font-size: 1.25em;
+            }
             .contents{
-                width:1617px;
+                width:1599px;
+                margin-top: -28px;
+            }
+            .container{
+                text-align: center;
+                padding: 1px 10px;
+            }
+            #polaroid1{
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 7.75%;
+                margin-right: 10px;
+                margin-left: auto;
+                display: block;
+                float:left;
+            }
+            #TPF{
+                margin-bottom: 120px;
+
+            }
+            #polaroid2{
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 24.35%;
+                margin-right: 00px;
+                margin-left: auto;
+                display: block;
+                float:right;
+            }
+            #FTF{
+                margin-bottom: 225px;
+            }
+            #polaroid3{
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                width: 36.05%;
+                margin-right: 30px;
+                margin-left: auto;
+                display: block;
+                float:right;
+            }
+            #EiInch{
+                margin-bottom: 170px;
+            }
+            h1{
+                text-align: center;
+            }
+            #comp{
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+                width:40%;
             }
         </style>
     </head>
@@ -14,7 +68,7 @@
         <div class="navbar">
             <a href="../../index.html">Home</a>
             <div class="dropdown">
-                <button class="dropbtn"><a href="Evolution%20of%20Storage%20Medias.html">Evolution of storage media</a></button>
+                <button class="dropbtn"><a href="">Evolution of storage media</a></button>
                 <div class="dropdown-content">
                     <a href="Floppy%20Disks.html">Floppy Disks</a>
                     <a href="Hard%20drives.html">Hard Drives</a>
@@ -87,19 +141,17 @@
             <h2> Short History</h2>
 
             <p>
-                In 1967 development began in a IBM facility in San Jose (CA) that led to the world's first floppy disk which was later on in 1972 was pushed on the market in a 8 inch format. Later on in 1976 the more common floppy disk size of arround 5 inches was introduced in 1976 and became almost universal on personal computers and word proccessing systems. The format was then even further reduced to arround 3 inches in 1982 and for a period both 5 and 3 inch sized models were poppular and they remained relevant for arround 40 years before they were dethroned by the new NAND flash technique
+                In 1967 development began in a IBM facility in San Jose (CA) that led to the world's first floppy disk which was later on in 1972 was pushed on the market in a 8 inch format. Later on in 1976 the more common floppy disk size of arround 5 inches was introduced in 1976 and became almost universal on personal computers and word proccessing systems. The format was then even further reduced to arround 3 inches in 1982 and for a period both 5 and 3 inch sized models were poppular and they remained relevant for arround 40 years before they were dethroned by the new NAND flash technology
             </p>
 
             <br><br>
-
-            Here you can see an 8,5 and 3 inch model floppy disks side by side<br>
-            <img src="../../Images/Floppy_disk_2009_G1.jpg" alt="Floppy disks">
-
+            <div id="comp">
+                Here you can see an 8,5 and 3 inch model floppy disks side by side<br>
+                <img src="../../Images/Floppy_disk_2009_G1.jpg" alt="Floppy disks">
+            </div>
             <h2>Storage sizes</h2>
 
             <ol>
-
-
                 <li>The first floppy disk with size of arround 8 inches could store 80 killobytes of data. That today would only be able to store a text file with a few sentences</li>
                 <li>The 5 inch model had a size of 360 killobytes. Quite a bit bigger than the 8 inch model but still nowhere near as big as today's standards</li>
                 <li>The 3 inch model could store arround 1.5 megabytes</li>
@@ -110,6 +162,107 @@
             <p>
                 A floppy disk, like a cassette tape, is made from a thin piece of plastic coated with a magnetic material on both sides. However, it is shaped like a disk rather than a long thin ribbon. The tracks are arranged in concentric rings so that the software can jump from "file 1" to "file 19" without having to fast forward through files 2-18. The diskette spins like a record and the heads move to the correct track, providing what is known as direct access storage.
             </p>
+
+            <div id="EiInch">
+
+                <h2>8 inch disc</h2>
+
+                <div id="polaroid3">
+                    <img src="../../Images/8inchflop.jpg" alt="8 inch drive with floppy and compared to a 3.5 inch floppy">
+                    <div id class="container">
+                        <p>8.5 inch drive and floppy with a 3.5 inch floppy for comparisosng</p>
+                    </div>
+                </div>
+                <p>
+                    In 1967, IBM tasked their San Jose, California development laboratory with developing a reliable and inexpensive system for loading microcode into their System/370 mainframes in a process called Initial Control Program Load (ICPL).
+                    <br><br>
+                    The System/370 was IBM's first computer system family to make extensive usage of volatile read/write semiconductor memory for microcode, so for most models, whenever the power was turned on, the microcode had to be loaded.
+                    <br><br>
+                    Normally this task would be done with tape drives which almost all 370 systems included, but tapes were large and slow. IBM wanted something faster and lighter that could also be sent out to customers with software updates for $5.            
+                </p>
+                <p>
+                    IBM Direct Access Storage Product Manager Alan Shugart assigned the job to David L. Noble. During 1968 Noble experimented with tape cartridges, RCA 45-rpm records, dictating belts, a magnetic disk with grooves developed by Telefunken, but finally created his own solution—the floppy disk or how it was called back then, the "memory disk". 
+                    <br>
+                    IBM introduced the read-only and holding 80 kilobytes diskette commercially in 1971.
+                </p>
+
+                <p>
+                    It was a plastic disk 8 inches in diameter, 1.5 mm thick, coated on one side with iron oxide, attached to a foam pad and designed to rotate on a turntable driven by an idler wheel.
+                </p>
+
+                <p>
+                    At first, its capacity was only 81.6 KB, but by Feb. 1969 he had doubled the thickness of the plastic base to 3 mm and coated both sides to add more capacity.
+                </p>
+            </div>
+
+            <h3>How it worked</h3>
+
+            <p>
+                A read-only magnetic head was moved over the disk by solenoids and read data from tracks prerecorded on the disk at a density of 1100 bits per inch. The disk was "hard-sectored" with 8 holes around the center to mark the beginning of data sectors.
+            </p>
+
+            <div id="FTF">
+                <h2>5.25 inch disc</h2>
+
+                <div>
+                    <div id="polaroid2">
+                        <img src="../../Images/five-inch.png" alt="5.25 Inch floppy DISC">
+                        <div class="container">
+                            5.25 Inch floppy Disc
+                        </div>
+                    </div>
+                </div>
+
+
+                <p>
+                    In a 1976 meeting, An Wang of Wang Laboratories informed Jim Adkisson and Don Massaro of Shugart Associates that the 8-inch format was simply
+                    <br>
+                    too large and expensive for the desktop word processing machines he was developing at the time, and argued for a US$100 drive.
+                </p>
+
+                <p>
+                    In 1976, Jim Adkisson and Don Massaro, Shugart engineers, sat down for lunch with a customer (An Wang of Wang Laboratories), who complained that the 8-inch drive was
+                    <br>
+                    too big for the personal computer. When Adkisson asked what the size should be, An pointed to a napkin on the table and said, "About that size."
+                </p>
+
+                <p>
+                    Thats how the 5.25 inch drive was born with a capacity of 110KB and at the price of 390$
+                </p>
+
+            </div>
+
+            <div id="TPF">
+
+                <h2>The 3.5 inch disc</h2>
+
+                <div>
+                    <div id="polaroid1">
+                        <img src="../../Images/Floppy_disk_300_dpi.jpg" alt="3.5 Inch floppy DISC">
+                        <div class="container">
+                            3.5 Inch floppy Disc
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Sony developed a 3.5-inch floppy drive by 1980 and began a two-year effort to make it the U.S. floppy disk standard.
+                    <br>
+                    They stored 438Kb of data, and later 720K (double-density) and 1.44MB (high-density). 
+                    <br>
+                    Sony declared that its new drive was smaller, faster, better protected (it had hard-shell cartridge and an automatic shutter,
+                    <br>that closed over the recording surface, when it was removed from the drive), and could fit in a shirt pocket. 
+
+                </p>
+            </div>
+
+            <h2>
+                Now for the most part, recordable CDs and DVDs, and flash drives have replaced floppies as the means of transporting files from one computer to another computer.
+            </h2>
+
+            <h2>In the video bellow you can see a floppy disk assembly line</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kc4kJKOGnHY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
 
