@@ -1,15 +1,17 @@
+<!--Made by Marios Tsiokas-->
+
+
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://use.fontawesome.com/5f110314f1.js"></script>
+
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
         <style>
-            body{
-                background-color: red;
-            }
             .contents {
                 width: 1600px;
                 margin: auto;
-                background: blue;
+                background: ;
             }
 
             h1{
@@ -166,6 +168,11 @@
             div#components h2{
                 text-align: center;
             }
+            #arrow{
+                position:fixed;
+                bottom:5px;
+                right:150px;
+            }
 
 
         </style>
@@ -222,7 +229,11 @@
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of Malware</a></button>
                 <div class="dropdown-content">
-                    <a></a>
+                    <a href="Worms.html">Computers worms</a>
+                    <a href="VirMal.html">Viruses/Malware</a>
+                    <a href="Ransomware.html">Ransomware</a>
+                    <a href="Protection.html">Protecting yourself</a>
+                </div>
                 </div>       
             </div>
             <div class="dropdown">
@@ -240,6 +251,8 @@
         </div>
 
         <div class="contents">
+
+            <a href="#top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true" id="arrow"></i></a>
 
             <h1> Solid State Drive</h1>
             <div id="whatis">
@@ -319,45 +332,44 @@
             </div>
 
             <hr>
-            <div id="components">
-                <h2>Components </h2>
 
-                Make the image when you click it highlight the components on text
+            <h2>Components </h2>
 
-                <div id="polaroid5">
-                    <img src="../../Images/internal-ssd.png" alt="Internal of SSD">
+            Make the image when you click it highlight the components on text
 
-                    <div class="container">
-                        Internal of an SSD
-                    </div>
+            <div id="polaroid5">
+                <img src="../../Images/internal-ssd.png" alt="Internal of SSD">
+
+                <div class="container">
+                    Internal of an SSD
                 </div>
-
-                <h3> Flash Memory Components</h3>
-
-                <p>
-                    Individual Flash die or devices using either NAND or NOR technology. Densities vary from 2GBytes to 64GBytes.
-                </p>
-
-                <h3> Buffer/Cache Components</h3>
-
-                <p>
-                    This is high speed RAM memory components used for speed matching and to increased data throughput.
-                </p>
-
-                <h3> SSD Controller</h3>
-
-                <p>
-                    The electronic component(s) that provide SSD device level interfacing and firmware execution. Included is an embedded processor, data ROM, data RAM, flash component interfacing, error correction code (ECC), wear leveling/TRIM, and security features.
-                </p>
-
-                <h3>Interface Components</h3>
-
-                <p>
-                    The electrical interface between the host processor and the SSD peripheral device.
-                </p>
-
-                <br><br><br>
             </div>
+
+            <h3> Flash Memory Components</h3>
+
+            <p>
+                Individual Flash die or devices using either NAND or NOR technology. Densities vary from 2GBytes to 64GBytes.
+            </p>
+
+            <h3> Buffer/Cache Components</h3>
+
+            <p>
+                This is high speed RAM memory components used for speed matching and to increased data throughput.
+            </p>
+
+            <h3> SSD Controller</h3>
+
+            <p>
+                The electronic component(s) that provide SSD device level interfacing and firmware execution. Included is an embedded processor, data ROM, data RAM, flash component interfacing, error correction code (ECC), wear leveling/TRIM, and security features.
+            </p>
+
+            <h3>Interface Components</h3>
+
+            <p>
+                The electrical interface between the host processor and the SSD peripheral device.
+            </p>
+
+            <br><br><br>
             <hr>
 
             <h2> What is NAND flash memory</h2>
@@ -382,23 +394,23 @@
             </div>
             <h2> What is NOR flash memory</h2>
 
-            <div id="nor">
-                <p>
-                    NOR flash is most often used in applications where individual bytes of data need to be written and read, and is most often used where random access and execute-in-place access techniques are required. As each read access takes the same amount of time, sequential read access is no faster than random access. Erase/program cycles can often be long.
-                </p>
 
-                <p>
-                    Today’s NOR flash devices are available with capacities in the megabits and low gigabits range. Depending on the device, individual bytes or sectors must be erased before writing data, with erase/program speeds typically below 1 MB/s.
-                </p>
+            <p>
+                NOR flash is most often used in applications where individual bytes of data need to be written and read, and is most often used where random access and execute-in-place access techniques are required. As each read access takes the same amount of time, sequential read access is no faster than random access. Erase/program cycles can often be long.
+            </p>
 
-                <div id="polaroid2">
+            <p>
+                Today’s NOR flash devices are available with capacities in the megabits and low gigabits range. Depending on the device, individual bytes or sectors must be erased before writing data, with erase/program speeds typically below 1 MB/s.
+            </p>
 
-                    <img src="../../Images/Nor%20Flash.jpg" alt="nor flash by intel">
-                    <div class="container">
-                        <p>NOR Flash chip made by intel</p>
-                    </div>
+            <div id="polaroid2">
+
+                <img src="../../Images/Nor%20Flash.jpg" alt="nor flash by intel">
+                <div class="container">
+                    <p>NOR Flash chip made by intel</p>
                 </div>
             </div>
+
             <hr>
             <h2>  M.2 SSD </h2>
 
