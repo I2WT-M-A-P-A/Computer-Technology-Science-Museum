@@ -1,7 +1,23 @@
+<!--Made by Marios Tsiokas-->
+
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://use.fontawesome.com/5f110314f1.js"></script>
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
+        <style>
+            #malcode{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #arrow{
+                position:fixed;
+                bottom:5px;
+                right:150px;
+            }
+
+        </style>
     </head>
     <body>
 
@@ -10,12 +26,12 @@
             <div class="dropdown">
                 <button class="dropbtn"><a href="">Evolution of storage media</a></button>
                 <div class="dropdown-content">
-                    <a href="Floppy%20Disks.html">Floppy Disks</a>
-                    <a href="Hard%20drives.html">Hard Drives</a>
-                    <a href="Optical%20Disks.html">Optical discs</a>
-                    <a href="Flash%20Drives.html">Flash Drives</a>
-                    <a href="Solid%20State%20Drives.html">SSDs</a>
-                    <a href="Cloud%20Storage.html">Cloud Storage</a>
+             <a href="../Evolution%20of%20Storage%20Medias/Floppy%20Disks.html">Floppy Disks</a>
+                    <a href="../Evolution%20of%20Storage%20MediasHard%20drives.html">Hard Drives</a>
+                    <a href="../Evolution%20of%20Storage%20MediasOptical%20Disks.html">Optical discs</a>
+                    <a href="../Evolution%20of%20Storage%20MediasFlash%20Drives.html">Flash Drives</a>
+                    <a href="../Evolution%20of%20Storage%20MediasSolid%20State%20Drives.html">SSDs</a>
+                    <a href="../Evolution%20of%20Storage%20MediasCloud%20Storage.html">Cloud Storage</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -54,7 +70,10 @@
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of Malware</a></button>
                 <div class="dropdown-content">
-                    <a></a>
+                    <a href="Worms.html">Computers worms</a>
+                    <a href="VirMal.html">Viruses/Malware</a>
+                    <a href="Ransomware.html">Ransomware</a>
+                    <a href="Protection.html">Protecting yourself</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -69,23 +88,36 @@
                     <a></a>
                 </div>
             </div>
+            <a href="../References.html">References</a>
         </div>
 
         <div class="contents">
+            <a href="#top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true" id="arrow"></i></a>
             <h1>Viruses and Malware</h1>
 
             <h2>What is a virus</h2>
 
+
             <p>
-                The term "virus" is also misused by extension to refer to other types of malware. "Malware" encompasses computer viruses along with many other forms of malicious software, such as computer "worms", ransomware, spyware, adware, trojan horses, keyloggers, rootkits, bootkits, malicious Browser Helper Object (BHOs), and other malicious software. The majority of active malware threats are trojan horse programs or computer worms rather than computer viruses. The term computer virus, coined by Fred Cohen in 1985, is a misnomer.[21] Viruses often perform some type of harmful activity on infected host computers, such as acquisition of hard disk space or central processing unit (CPU) time, accessing and stealing private information (e.g., credit card numbers, debit card numbers, phone numbers, names, email addresses, passwords, bank information, house addresses, etc.), corrupting data, displaying political, humorous or threatening messages on the user's screen, spamming their e-mail contacts, logging their keystrokes, or even rendering the computer useless. However, not all viruses carry a destructive "payload" and attempt to hide themselves—the defining characteristic of viruses is that they are self-replicating computer programs that modify other software without user consent by injecting themselves into the said programs, similar to a biological virus which replicates within living cells                
+                The term "virus" is also misused by extension to refer to other types of malware. "Malware" encompasses computer viruses along with many other forms of malicious software, such as computer "worms", ransomware, spyware, adware, trojan horses, keyloggers, rootkits, bootkits, malicious Browser Helper Object (BHOs), and other malicious software. 
+                <br>
+                The majority of active malware threats are trojan horse programs or computer worms rather than computer viruses. The term computer virus, coined by Fred Cohen in 1985, is a misnomer.
+                <br>
+                Viruses often perform some type of harmful activity on infected host computers, such as acquisition of hard disk space or central processing unit (CPU) time, accessing and stealing private information (e.g. email addresses, passwords, bank information etc.), corrupti ng data, displaying political, humorous or threatening messages on the user's screen, spamming their e-mail contacts, logging their keystrokes, or even rendering the computer useless. 
+                <br>
+                However, not all viruses carry a destructive "payload" and attempt to hide themselves—the defining characteristic of viruses is that they are self-replicating computer programs that modify other software without user consent by injecting themselves into the said programs, similar to a biological virus which replicates within living cells                
             </p>
+            <img src="../../Images/malicious-code-4036349_640.jpg" id="malcode">
+
 
             <h2>Brain boot sector virus</h2>
 
             <h3>What is the brain boot sector virus</h3>
 
             <p>
-                Brain, the first PC virus, began infecting 5.2" floppy disks in 1986. As Securelist reports, it was the work of two brothers, Basit and Amjad Farooq Alvi, who ran a computer store in Pakistan. Tired of customers making illegal copies of their software, they developed Brain, which replaced the boot sector of a floppy disk with a virus. The virus, which was also the first stealth virus, contained a hidden copyright message, but did not actually corrupt any data. The disk label is usually changed to ©Brain, and the following text can be seen in infected boot sectors:
+                Brain, the first PC virus, began infecting 5.2" floppy disks in 1986. As Securelist reports, it was the work of two brothers, Basit and Amjad Farooq Alvi, who ran a computer store in Pakistan.
+                <br>
+                Tired of customers making illegal copies of their software, they developed Brain, which replaced the boot sector of a floppy disk with a virus. The virus, which was also the first stealth virus, contained a hidden copyright message, but did not actually corrupt any data. The disk label is usually changed to ©Brain, and the following text can be seen in infected boot sectors:
             </p>
 
             <p>
@@ -101,7 +133,8 @@
             </p>
 
             <p>
-                The virus came complete with the brothers' address and three phone numbers, and a message that told the user that their machine was infected and to call them for inoculation: <br>
+                The virus came complete with the brothers' address and three phone numbers, and a message that told the user that their machine was infected and to call them for inoculation: <br><br>
+
                 Welcome to the Dungeon © 1986 Basit &#38; Amjads (pvt). BRAIN COMPUTER SERVICES 730 NIZAM
                 BLOCK ALLAMA IQBAL TOWN LAHORE-PAKISTAN PHONE: 430791,443248,280530. Beware of this VIRUS.... Contact us for vaccination...
             </p>
@@ -114,13 +147,6 @@
 
             </p>
 
-            <h3>How it worked</h3>
-
-            <p>
-                In late March 1999, a programmer named David Lee Smith hijacked an America Online (AOL) account and used it to post a file on an Internet newsgroup named “alt.sex.” The posting promised dozens of free passwords to fee-based websites with adult content. When users took the bait, downloading the document and then opening it with Microsoft Word, a virus was unleashed on their computers.
-                <br><br>
-                On March 26, it began spreading like wildfire across the Internet.
-            </p>
 
             <h3>Damage dealt</h3>
 
@@ -178,16 +204,34 @@
 
             <p>
                 The Zeus Virus can do a number of nasty things once it infects a computer, but it really has two major pieces of functionality.
+                <br><br>
                 First, it creates a botnet, which is a network of corrupted machines that are covertly controlled by a command and control server under the control of the malware's owner. A botnet allows the owner to collect massive amounts of information or execute large-scale attacks.
-                Zeus also acts as a financial services Trojan designed to steal banking credentials from the machines it infects. It accomplishes this through website monitoring and keylogging, where the malware recognizes when the user is on a banking website and records the keystrokes used to log in. This means that the Trojan can get around the security in place on these websites, as the keystrokes required for logging in are recorded as the user enters them
+                <br><br>
+                Zeus also acts as a financial services Trojan designed to steal banking credentials from the machines it infects. 
+                <br>
+                It accomplishes this through website monitoring and keylogging, where the malware recognizes when the user is on a banking website and records the keystrokes used to log in.
+                <br>
+                This means that the Trojan can get around the security in place on these websites, as the keystrokes required for logging in are recorded as the user enters them
 
                 The Zeus Virus has two main methods of infection:
-                •	Spam messages
-                •	Drive-by downloads
-                The spam messages often come in the form of email, but there have been social media campaigns designed to spread the malware through messages and postings on social media sites. Once users click on a link in the email or message, they are directed to a website that automatically installs the malware. Because the malware is adept at stealing login credentials, it can sometimes be configured to steal email and social media credentials, enabling the botnet to spam messages from trusted sources and greatly expand its range.
-                Drive-by downloads happen when the hackers are able to corrupt legitimate websites, inserting their malicious code into a website that the user trusts. The malware then installs itself when the user visits the website or when the user downloads and installs a benign program
             </p>
-            
+            <ul>
+                <li>Spam messages</li>
+                <li>Drive-by downloads</li>
+            </ul>
+            <p>
+                The spam messages often come in the form of email, but there have been social media campaigns designed to spread the malware through messages and postings on social media sites.
+                <br>
+                Once users click on a link in the email or message, they are directed to a website that automatically installs the malware. 
+                <br>
+                Because the malware is adept at stealing login credentials, it can sometimes be configured to steal email and social media credentials, enabling the botnet to spam messages from trusted sources and greatly expand its range.
+                <br>
+
+                Drive-by downloads happen when the hackers are able to corrupt legitimate websites, inserting their malicious code into a website that the user trusts. 
+                <br>
+                The malware then installs itself when the user visits the website or when the user downloads and installs a benign program
+            </p>
+
             <h3>Damage dealt</h3>
             <p>
                 The initial impact when the malware started its infiltration affected more than 3.6 million PCs in the United States causing over $70 million in damages. Anyone using a Windows PC can fall victim to the Zeus virus, even with up-to-date antivirus, it can be near impossible to detect.  

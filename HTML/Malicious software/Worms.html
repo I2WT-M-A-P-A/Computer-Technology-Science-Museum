@@ -1,21 +1,36 @@
+<!--Made by Marios Tsiokas-->
+
+
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://use.fontawesome.com/5f110314f1.js"></script>
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
+        <style>
+            .uparrow{
+                float: right;
+            }
+            #arrow{
+                position:fixed;
+                bottom:5px;
+                right:150px;
+            }
+
+        </style>
     </head>
     <body>
-
+        <a id="top"></a>
         <div class="navbar">
             <a href="../../index.html">Home</a>
             <div class="dropdown">
                 <button class="dropbtn"><a href="">Evolution of storage media</a></button>
                 <div class="dropdown-content">
-                    <a href="Floppy%20Disks.html">Floppy Disks</a>
-                    <a href="Hard%20drives.html">Hard Drives</a>
-                    <a href="Optical%20Disks.html">Optical discs</a>
-                    <a href="Flash%20Drives.html">Flash Drives</a>
-                    <a href="Solid%20State%20Drives.html">SSDs</a>
-                    <a href="Cloud%20Storage.html">Cloud Storage</a>
+                <a href="../Evolution%20of%20Storage%20Medias/Floppy%20Disks.html">Floppy Disks</a>
+                    <a href="../Evolution%20of%20Storage%20MediasHard%20drives.html">Hard Drives</a>
+                    <a href="../Evolution%20of%20Storage%20MediasOptical%20Disks.html">Optical discs</a>
+                    <a href="../Evolution%20of%20Storage%20MediasFlash%20Drives.html">Flash Drives</a>
+                    <a href="../Evolution%20of%20Storage%20MediasSolid%20State%20Drives.html">SSDs</a>
+                    <a href="../Evolution%20of%20Storage%20MediasCloud%20Storage.html">Cloud Storage</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -54,7 +69,10 @@
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of Malware</a></button>
                 <div class="dropdown-content">
-                    <a></a>
+                    <a href="Worms.html">Computers worms</a>
+                    <a href="VirMal.html">Viruses/Malware</a>
+                    <a href="Ransomware.html">Ransomware</a>
+                    <a href="Protection.html">Protecting yourself</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -72,28 +90,47 @@
         </div>
 
         <div class="contents">
+            <a href="#top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true" id="arrow"></i></a>
 
             <h1> Computer Worms</h1>
+
+
 
             <h2>What is a computer worm</h2>
 
             <p>
-                A computer worm is a standalone malware computer program that replicates itself in order to spread to other computers.[1] It often uses a computer network to spread itself, relying on security failures on the target computer to access it. It will use this machine as a host to scan and infect other computers. When these new worm-invaded computers are controlled, the worm will continue to scan and infect other computers using these computers as hosts, and this behavior will continue.[2] Computer worms use recursive method to copy themselves without host program and distribute themselves based on the law of exponential growth, and then controlling and infecting more and more computers in a short time.[3] Worms almost always cause at least some harm to the network, even if only by consuming bandwidth, whereas viruses almost always corrupt or modify files on a targeted computer.
+                A computer worm is a standalone malware computer program that replicates itself in order to spread to other computers It often uses a computer network to spread itself, relying on security failures on the target computer to access it. 
+                <br>
+                It will use this machine as a host to scan and infect other computers. 
+                <br>
+                When these new worm-invaded computers are controlled, the worm will continue to scan and infect other computers using these computers as hosts, and this behavior will continue.
+                <br>
+                Computer worms use recursive method to copy themselves without host program and distribute themselves based on the law of exponential growth, and then controlling and infecting more and more computers in a short time.
+                <br>
+                Worms almost always cause at least some harm to the network, even if only by consuming bandwidth, whereas viruses almost always corrupt or modify files on a targeted computer.
             </p>
+
             <p>
-                Many worms are designed only to spread, and do not attempt to change the systems they pass through. However, as the Morris worm that you will see, even these "payload-free" worms can cause major disruption by increasing network traffic and other unintended effects.
+                Many worms are designed only to spread, and do not attempt to change the systems they pass through. However, as the Morris worm that you will see, even these "payload-free" 
+                <br>worms can cause major disruption by increasing network traffic and other unintended effects.
             </p>
+
+            <img src="../../Images/worm.jpg" alt="computer worm" id="worm" width="450px">
 
             <h2>The moris worm</h2>
 
             <h3>What is the moris worm</h3>
 
             <p>
-                The Morris Worm, sometimes also called the Internet Worm, entered the history books as the first computer worm that was distributed over the Internet and that compromised thousands of computers, drawing massive media attention in the process. It was written and unleashed in 1988 by Robert Tappan Morris, a 23-year-old doctoral student at Cornell University and the son of Robert Morris Sr., a famous cryptographer and formerly the chief scientist at the NSA’s National Computer Security Center.
+                The Morris Worm, sometimes also called the Internet Worm, entered the history books as the first computer worm that was distributed over the Internet and that compromised thousands of computers, drawing massive media attention in the process.
+                <br>
+                It was written and unleashed in 1988 by Robert Tappan Morris, a 23-year-old doctoral student at Cornell University and the son of Robert Morris Sr., a famous cryptographer and formerly the chief scientist at the NSA’s National Computer Security Center.
             </p>
 
             <p>
-                Though Morris did not intend for the worm to be actively destructive, instead seeking to merely highlight the weaknesses present in many networks of the time, an unintentional consequence of Morris' coding resulted in the worm being more damaging and easily spread than originally planned; programmed to check each computer to determine if the infection was already present, Morris, believing that some system administrators might counter this by instructing the computer to report a false positive, programmed the worm to copy itself 14% of the time, regardless of the status of infection on the computer. This resulted in a computer potentially being infected multiple times, with each additional infection slowing the machine down to the eventual point of being unusable. This would have the same effect as a fork bomb, and crash the computer several times.
+                Though Morris did not intend for the worm to be actively destructive, instead seeking to merely highlight the weaknesses present in many networks of the time, an unintentional consequence of Morris' coding resulted in 
+                <br>
+                the worm being more damaging and easily spread than originally planned; programmed to check each computer to determine if the infection was already present, Morris, believing that some system administrators might counter this by instructing the computer to report a false positive, programmed the worm to copy itself 14% of the time, regardless of the status of infection on the computer. This resulted in a computer potentially being infected multiple times, with each additional infection slowing the machine down to the eventual point of being unusable. This would have the same effect as a fork bomb, and crash the computer several times.
             </p>
 
             <h3>Damage done</h3>
@@ -111,7 +148,7 @@
             </p>
 
             <p>
-                The worm was created by Morris simply to see if it could be done,[2] and was released from the Massachusetts Institute of Technology (MIT) in the hope of suggesting that its creator studied there, instead of Cornell.
+                The worm was created by Morris simply to see if it could be done, and was released from the Massachusetts Institute of Technology (MIT) in the hope of suggesting that its creator studied there, instead of Cornell.
             </p>
 
             <h3>Aftermath</h3>
@@ -125,7 +162,7 @@
             </p>
             <p>
 
-                You can look at the decompiled source code of the virus on the github link bellow
+                You can look at the decompiled source code of the worm on the github link bellow
             </p>
 
             <a href="https://github.com/arialdomartini/morris-worm">arialdomartini/morris-worm: The decompiled Morris Worm source code (github.com)</a>
@@ -147,10 +184,10 @@
             <p>
                 CodeRed is a worm that caused possible billions of dollars of damage in the summer of 2001. It contains the text string "Hacked by Chinese!", which is displayed on web pages that the worm defaces. It is also one of the few worms able to run entirely in memory, leaving no files on the hard drive or any other permanent storage (although some variants do).
             </p>
-            
-            
+
+
             <h3>You can see a video about Code Red below</h3>
-            
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/iu48QBJP_p0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <h2>Father christmass</h2>
@@ -164,19 +201,30 @@
             <h3>How it worked</h3>
 
             <p>
-                The worm, a file named HI.COM, copies itself from one DECNET node to another. The worm on the infecting node attempts to run the copy of itself on the target node, either by Task Object 0, a program that allows task-to-task jobs to be run between two computer systems, or by using DECNET as both a username and password. If it is unable to run the copy on the target system, it will delete the HI.COM file on the target system.
-
-                If the infection is successful, HI.COM will load into the memory. It will use the process name MAIL_178DC and delete the HI.COM file. The worm then sends a SYS$ANNOUNCE banner to 20597::PHSOLIDE. The worm then checks the system clock. If the date is past 1988.12.24 at 00:00 and before 00:30, it creates a list of all users on the system sends an email to them. If it is past 00:30, the worm will simply stop executing.
+                The worm, a file named HI.COM, copies itself from one DECNET node to another.
+                <br>
+                The worm on the infecting node attempts to run the copy of itself on the target node, either by Task Object 0, a program that allows task-to-task jobs to be run between two computer systems, or by using DECNET as both a username and password.
+                <br>
+                If it is unable to run the copy on the target system, it will delete the HI.COM file on the target system.
+                <br>
+                If the infection is successful, HI.COM will load into the memory. 
+                It will use the process name MAIL_178DC and delete the HI.COM file. 
+                <br>
+                The worm then sends a SYS$ANNOUNCE banner to 20597::PHSOLIDE. The worm then checks the system clock. 
+                <br>
+                If the date is past 1988.12.24 at 00:00 and before 00:30, it creates a list of all users on the system sends an email to them. If it is past 00:30, the worm will simply stop executing.
             </p>
 
             <h3>Damage done</h3>
 
             <p>
-                The worm was only able to execute on a few systems. About 6,000 systems were reported to have received the HI.COM file, but less than 2% actually executed the the worm.
+                The worm was only able to execute on a few systems.
+                <br>
+                About 6,000 systems were reported to have received the HI.COM file, but less than 2% actually executed the the worm.
             </p>
-            
+
             <h3>You can see a video about Father Christmas below</h3>
-            
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/sOtKLILoSGs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <h2> MSBlast</h2>
@@ -185,8 +233,12 @@
 
             <p>
                 Blaster Worm (also known as Lovsan, Lovesan, or MSBlast) was a computer worm that spread on computers running operating systems Windows XP and Windows 2000 during August 2003.
-
-                The worm was first noticed and started spreading on August 11, 2003. The rate that it spread increased until the number of infections peaked on August 13, 2003. Once a network (such as a company or university) was infected, it spread more quickly within the network because firewalls typically did not prevent internal machines from using a certain port.[2] Filtering by ISPs and widespread publicity about the worm curbed the spread of Blaster.
+                <br>
+                The worm was first noticed and started spreading on August 11, 2003. The rate that it spread increased until the number of infections peaked on August 13, 2003.
+                <br>
+                Once a network (such as a company or university) was infected, it spread more quickly within the network because firewalls typically did not prevent internal machines from using a certain port.
+                <br>
+                Filtering by ISPs and widespread publicity about the worm curbed the spread of Blaster.
             </p>
 
             <h3>How it works</h3>
