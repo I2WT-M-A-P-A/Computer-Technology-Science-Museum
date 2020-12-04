@@ -1,15 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
-        <style></style>
+        <script src="https://use.fontawesome.com/5f110314f1.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
+        <style>
+            #arrow{
+                position:fixed;
+                bottom:5px;
+                right:150px;
+            }
+        </style>
     </head>
 
     <body>
-
-        <div class="navigation">
-
+        <a href="#top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true" id="arrow"></i></a>
+        <div class="navbar">
+            <a href="../../index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="">Evolution of storage media</a></button>
+                <div class="dropdown-content">
+                    <a href="../StorageMedias/FloppyDisks.html">Floppy Disks</a>
+                    <a href="../EvolutionOfComputers/Harddrives.html">Hard Drives</a>
+                    <a href="../EvolutionOfComputers/OpticalDisks.html">Optical discs</a>
+                    <a href="../EvolutionOfComputers/FlashDrives.html">Flash Drives</a>
+                    <a href="../EvolutionOfComputers/SolidStateDrives.html">SSDs</a>
+                    <a href="../EvolutionOfComputers/CloudStorage.html">Cloud Storage</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="">Evolution of GPUs</a></button>
+                <div class="dropdown-content">
+                    <a href="GraphicsHistory.html">History of GPUs</a>
+                    <a href="generation2.html">1st generation of GPUs</a>
+                    <a href="generation1.html">2nd-3rd generation of GPUs</a>
+                    <a href="gen3.html">4th generation of GPUs</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../EvolutionOfComputers/EvolutionOfComputers.html">Evolution of Computers</a></button>
+                <div class="dropdown-content">
+                    <a></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../CPU/CPU.html">Evolution of CPUs</a></button>
+                <div class="dropdown-content">
+                    <a href="../CPU/CPU.html">CPUs</a>
+                    <a href="../CPU/AMDprocessors.html">AMD CPUs</a>
+                    <a href="../CPU/IntelProcessors.html">Intel CPUs</a>
+                    <a href="../CPU/HowIsACPUmade.html">How is a cpu made</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../">Evolution of DOS/Windows</a></button>
+                <div class="dropdown-content">
+                    <a></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../">Evolution of Unix/Linux</a></button>
+                <div class="dropdown-content">
+                    <a href="../linux%2520O.S/Unix.html">Unix</a>
+                    <a href="../linux%2520O.S/linuxOS.html">Linux</a>
+                    <a href="../linux%2520O.S/LinuxDistros.html">Linux Distros</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../">Evolution of Malware</a></button>
+                <div class="dropdown-content">
+                    <a href="../Malicious%20software/Worms.html">Computers worms</a>
+                    <a href="../Malicious%20software/VirMal.html">Viruses/Malware</a>
+                    <a href="../Malicious%20software/Ransomware.html">Ransomware</a>
+                    <a href="../Malicious%20software/Protection.html">Protecting yourself</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../">Mac OS</a></button>
+                <div class="dropdown-content">
+                    <a></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="../">About us</a></button>
+                <div class="dropdown-content">
+                    <a></a>
+                </div>
+            </div>
+            <a href="../References.html">References</a>
         </div>
+
 
         <div class="contents">
 
@@ -44,24 +123,24 @@
 
                 For example, if an addition instruction is to be executed, the arithmetic logic unit (ALU) inputs are connected to a pair of operand sources (numbers to be summed), the ALU is configured to perform an addition operation so that the sum of its operand inputs will appear at its output, and the ALU output is connected to storage (e.g., a register or memory) that will receive the sum. When the clock pulse occurs, the sum will be transferred to storage and, if the resulting sum is too large (i.e., it is larger than the ALU's output word size), an arithmetic overflow flag will be set.</p>
 
+
+
+            <h3>Control unit</h3>
+            <p>The control unit (CU) is a component of the CPU that directs the operation of the processor. It tells the computer's memory, arithmetic and logic unit and input and output devices how to respond to the instructions that have been sent to the processor.
+
+                It directs the operation of the other units by providing timing and control signals. Most computer resources are managed by the CU. It directs the flow of data between the CPU and the other devices. John von Neumann included the control unit as part of the von Neumann architecture. In modern computer designs, the control unit is typically an internal part of the CPU with its overall role and operation unchanged since its introduction.</p>
+            <h3>Arithmetic logic unit</h3>
+            <p>The arithmetic logic unit (ALU) is a digital circuit within the processor that performs integer arithmetic and bitwise logic operations. The inputs to the ALU are the data words to be operated on (called operands), status information from previous operations, and a code from the control unit indicating which operation to perform. Depending on the instruction being executed, the operands may come from internal CPU registers or external memory, or they may be constants generated by the ALU itself.
+
+                When all input signals have settled and propagated through the ALU circuitry, the result of the performed operation appears at the ALU's outputs. The result consists of both a data word, which may be stored in a register or memory, and status information that is typically stored in a special, internal CPU register reserved for this purpose.</p>
+            <h3>Address generation unit</h3>
+            <p>ddress generation unit (AGU), sometimes also called address computation unit (ACU),[69] is an execution unit inside the CPU that calculates addresses used by the CPU to access main memory. By having address calculations handled by separate circuitry that operates in parallel with the rest of the CPU, the number of CPU cycles required for executing various machine instructions can be reduced, bringing performance improvements.
+
+                While performing various operations, CPUs need to calculate memory addresses required for fetching data from the memory; for example, in-memory positions of array elements must be calculated before the CPU can fetch the data from actual memory locations. Those address-generation calculations involve different integer arithmetic operations, such as addition, subtraction, modulo operations, or bit shifts. Often, calculating a memory address involves more than one general-purpose machine instruction, which do not necessarily decode and execute quickly. By incorporating an AGU into a CPU design, together with introducing specialized instructions that use the AGU, various address-generation calculations can be offloaded from the rest of the CPU, and can often be executed quickly in a single CPU cycle.
+
+                Capabilities of an AGU depend on a particular CPU and its architecture. Thus, some AGUs implement and expose more address-calculation operations, while some also include more advanced specialized instructions that can operate on multiple operands at a time. Furthermore, some CPU architectures include multiple AGUs so more than one address-calculation operation can be executed simultaneously, bringing further performance improvements by capitalizing on the superscalar nature of advanced CPU designs. For example, Intel incorporates multiple AGUs into its Sandy Bridge and Haswell microarchitectures, which increase bandwidth of the CPU memory subsystem by allowing multiple memory-access instructions to be executed in parallel.</p>
+
         </div>
-
-        <h3>Control unit</h3>
-        <p>The control unit (CU) is a component of the CPU that directs the operation of the processor. It tells the computer's memory, arithmetic and logic unit and input and output devices how to respond to the instructions that have been sent to the processor.
-
-            It directs the operation of the other units by providing timing and control signals. Most computer resources are managed by the CU. It directs the flow of data between the CPU and the other devices. John von Neumann included the control unit as part of the von Neumann architecture. In modern computer designs, the control unit is typically an internal part of the CPU with its overall role and operation unchanged since its introduction.</p>
-        <h3>Arithmetic logic unit</h3>
-        <p>The arithmetic logic unit (ALU) is a digital circuit within the processor that performs integer arithmetic and bitwise logic operations. The inputs to the ALU are the data words to be operated on (called operands), status information from previous operations, and a code from the control unit indicating which operation to perform. Depending on the instruction being executed, the operands may come from internal CPU registers or external memory, or they may be constants generated by the ALU itself.
-
-            When all input signals have settled and propagated through the ALU circuitry, the result of the performed operation appears at the ALU's outputs. The result consists of both a data word, which may be stored in a register or memory, and status information that is typically stored in a special, internal CPU register reserved for this purpose.</p>
-        <h3>Address generation unit</h3>
-        <p>ddress generation unit (AGU), sometimes also called address computation unit (ACU),[69] is an execution unit inside the CPU that calculates addresses used by the CPU to access main memory. By having address calculations handled by separate circuitry that operates in parallel with the rest of the CPU, the number of CPU cycles required for executing various machine instructions can be reduced, bringing performance improvements.
-
-            While performing various operations, CPUs need to calculate memory addresses required for fetching data from the memory; for example, in-memory positions of array elements must be calculated before the CPU can fetch the data from actual memory locations. Those address-generation calculations involve different integer arithmetic operations, such as addition, subtraction, modulo operations, or bit shifts. Often, calculating a memory address involves more than one general-purpose machine instruction, which do not necessarily decode and execute quickly. By incorporating an AGU into a CPU design, together with introducing specialized instructions that use the AGU, various address-generation calculations can be offloaded from the rest of the CPU, and can often be executed quickly in a single CPU cycle.
-
-            Capabilities of an AGU depend on a particular CPU and its architecture. Thus, some AGUs implement and expose more address-calculation operations, while some also include more advanced specialized instructions that can operate on multiple operands at a time. Furthermore, some CPU architectures include multiple AGUs so more than one address-calculation operation can be executed simultaneously, bringing further performance improvements by capitalizing on the superscalar nature of advanced CPU designs. For example, Intel incorporates multiple AGUs into its Sandy Bridge and Haswell microarchitectures, which increase bandwidth of the CPU memory subsystem by allowing multiple memory-access instructions to be executed in parallel.</p>
-
-
         <div class="footer">
 
         </div>

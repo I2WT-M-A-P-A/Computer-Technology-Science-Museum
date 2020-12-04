@@ -2,30 +2,40 @@
 <html>
     <head>
 
+        <script src="https://use.fontawesome.com/5f110314f1.js"></script>
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
-
-
+        <style>
+            #arrow{
+                position:fixed;
+                bottom:5px;
+                right:150px;
+            }
+            .contents{
+                margin-top: 26px;
+            }
+        </style>
     </head>
     <body>
-        <div class="navbar">
+      <div class="navbar">
             <a href="../../index.html">Home</a>
             <div class="dropdown">
                 <button class="dropbtn"><a href="">Evolution of storage media</a></button>
                 <div class="dropdown-content">
-                    <a href="Floppy%20Disks.html">Floppy Disks</a>
-                    <a href="Hard%20drives.html">Hard Drives</a>
-                    <a href="Optical%20Disks.html">Optical discs</a>
-                    <a href="Flash%20Drives.html">Flash Drives</a>
-                    <a href="Solid%20State%20Drives.html">SSDs</a>
-                    <a href="Cloud%20Storage.html">Cloud Storage</a>
+                    <a href="../StorageMedias/FloppyDisks.html">Floppy Disks</a>
+                    <a href="../StorageMedias/Harddrives.html">Hard Drives</a>
+                    <a href="../StorageMedias/OpticalDisks.html">Optical discs</a>
+                    <a href="../StorageMedias/FlashDrives.html">Flash Drives</a>
+                    <a href="../StorageMedias/SolidStateDrives.html">SSDs</a>
+                    <a href="../StorageMedias/CloudStorage.html">Cloud Storage</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../GraphicCards/GraphicsHistory.html">Evolution of GPUs</a></button>
+                <button class="dropbtn"><a href="">Evolution of GPUs</a></button>
                 <div class="dropdown-content">
-                    <a href="../GraphicCards/generation2.html">1st generation of GPUs</a>
-                    <a href="../GraphicCards/generation1.html">2nd-3rd generation of GPUs</a>
-                    <a href="../GraphicCards/gen3.html">4th generation of GPUs</a>
+                    <a href="GraphicsHistory.html">History of GPUs</a>
+                    <a href="generation2.html">1st generation of GPUs</a>
+                    <a href="generation1.html">2nd-3rd generation of GPUs</a>
+                    <a href="gen3.html">4th generation of GPUs</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -37,7 +47,10 @@
             <div class="dropdown">
                 <button class="dropbtn"><a href="../CPU/CPU.html">Evolution of CPUs</a></button>
                 <div class="dropdown-content">
-                    <a></a>
+                    <a href="../CPU/CPU.html">CPUs</a>
+                    <a href="../CPU/AMDprocessors.html">AMD CPUs</a>
+                    <a href="../CPU/IntelProcessors.html">Intel CPUs</a>
+                    <a href="../CPU/HowIsACPUmade.html">How is a cpu made</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -49,13 +62,18 @@
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of Unix/Linux</a></button>
                 <div class="dropdown-content">
-                    <a></a>
+                    <a href="../linux%2520O.S/Unix.html">Unix</a>
+                    <a href="../linux%2520O.S/linuxOS.html">Linux</a>
+                    <a href="../linux%2520O.S/LinuxDistros.html">Linux Distros</a>
                 </div>
             </div>
             <div class="dropdown">
                 <button class="dropbtn"><a href="../">Evolution of Malware</a></button>
                 <div class="dropdown-content">
-                    <a></a>
+                    <a href="../Malicious%20software/Worms.html">Computers worms</a>
+                    <a href="../Malicious%20software/VirMal.html">Viruses/Malware</a>
+                    <a href="../Malicious%20software/Ransomware.html">Ransomware</a>
+                    <a href="../Malicious%20software/Protection.html">Protecting yourself</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -69,32 +87,36 @@
                 <div class="dropdown-content">
                     <a></a>
                 </div>
-                <div class="contents">
-                    <h1>GRAPHIC CARDS GPU</h1>
-                    <h2>Introduction</h2>
-                    <h4>What is a GPU card?</h4>
-                    <p>
-                        The Graphics Card is responsible for rendering an image to your monitor, it does this by converting data into a signal your monitor can understand.
-                        The better your graphics card the better, and smoother an image can be produced. This is naturally very important for gamers and video editors.
-                    </p>
-                    <br><br><br>
-                    <h1>History</h1>
-                    <h3>1976 - 1995: The Early Days of 3D Consumer Graphics</h3>
-
-                    <p>The first true 3D graphics started with early display controllers, known as video shifters and video address generators. They acted as a pass-through between the main processor and the display. The incoming data stream was converted into serial bitmapped video output such as luminance, color, as well as vertical and horizontal composite sync, which kept the line of pixels in a display generation and synchronized each successive line along with the blanking interval (the time between ending one scan line and starting the next).</p>
-
-                    <p>A flurry of designs arrived in the latter half of the 1970s, laying the foundation for 3D graphics as we know them. RCA’s “Pixie” video chip (CDP1861) in 1976, for instance, was capable of outputting a NTSC compatible video signal at 62x128 resolution, or 64x32 for the ill-fated RCA Studio II console.The video chip was quickly followed a year later by the Television Interface Adapter (TIA) 1A, which was integrated into the Atari 2600 for generating the screen display, sound effects, and reading input controllers. Development of the TIA was led by Jay Miner, who also led the design of the custom chips for the Commodore Amiga computer later on.</p>
-
-                    <h4>After this a lot more consoles graphic cards realeased. But let's talk for the computers.</h4>
-
-                    <p>Released in 1995, the Mach64 notched a number of notable firsts. It became the first graphics adapter to be available for PC and Mac computers in the form of the Xclaim ($450 and $650 depending on onboard memory), and, along with S3's Trio, offered full-motion video playback acceleration.The Mach64 also ushered in ATI’s first pro graphics cards, the 3D Pro Turbo and 3D Pro Turbo+PC2TV, priced at a cool $599 for the 2MB option and $899 for the 4MB.</p>
-
-                    <p>The following month saw a technology start-up called 3DLabs rise onto the scene, born when DuPont’s Pixel graphics division bought the subsidiary from its parent company, along with the GLINT 300SX processor capable of OpenGL rendering, fragment processing and rasterisation. Due to their high price the company's cards were initially aimed at the professional market. The Fujitsu Sapphire2SX 4MB retailed for $1600-$2000, while an 8MB ELSA GLoria 8 was $2600-$2850. The 300SX, however, was intended for the gaming market.</p>
-                    <p>The Gaming GLINT 300SX of 1995 featured a much-reduced 2MB of memory. It used 1MB for textures and Z-buffer and the other for frame buffer, but came with an option to increase the VRAM for Direct3D compatibility for another $50 over the $349 base price. The card failed to make headway in an already crowded marketplace, but 3DLabs was already working on a successor in the Permedia series.S3 seemed to be everywhere at that time. The high-end OEM marked was dominated by the company's Trio64 chipsets that integrated DAC, a graphics controller, and clock synthesiser into a single chip. They also utilized a unified frame buffer and supported hardware video overlay (a dedicated portion of graphics memory for rendering video as the application requires). The Trio64 and its 32-bit memory bus sibling, the Trio32, were available as OEM units and standalone cards from vendors such as Diamond, ELSA, Sparkle, STB, Orchid, Hercules and Number Nine. Diamond Multimedia’s prices ranged from $169 for a ViRGE based card, to $569 for a Trio64+ based Diamond Stealth64 Video with 4MB of VRAM.</p>
-                    <p>After that more progressed cards started coming up but they were all the same with some small exceptions of graphics cards that had extra features  the NV1 which is the first graphics card nvidia released which was the first graphics card with 3D redering.And of cource nvidia started releasing the first generations of graphics cards and continued releasing new genrations until today. Right now we are on the 4th generation of graphics cards .</p>
-
-                </div>
             </div>
+            <a href="../References.html">References</a>
+        </div>
+
+            <div class="contents">
+                <h1>GRAPHIC CARDS GPU</h1>
+                <h2>Introduction</h2>
+                <h4>What is a GPU card?</h4>
+                <p>
+                    The Graphics Card is responsible for rendering an image to your monitor, it does this by converting data into a signal your monitor can understand.
+                    The better your graphics card the better, and smoother an image can be produced. This is naturally very important for gamers and video editors.
+                </p>
+                <br><br><br>
+                <h1>History</h1>
+                <h3>1976 - 1995: The Early Days of 3D Consumer Graphics</h3>
+
+                <p>The first true 3D graphics started with early display controllers, known as video shifters and video address generators. They acted as a pass-through between the main processor and the display. The incoming data stream was converted into serial bitmapped video output such as luminance, color, as well as vertical and horizontal composite sync, which kept the line of pixels in a display generation and synchronized each successive line along with the blanking interval (the time between ending one scan line and starting the next).</p>
+
+                <p>A flurry of designs arrived in the latter half of the 1970s, laying the foundation for 3D graphics as we know them. RCA’s “Pixie” video chip (CDP1861) in 1976, for instance, was capable of outputting a NTSC compatible video signal at 62x128 resolution, or 64x32 for the ill-fated RCA Studio II console.The video chip was quickly followed a year later by the Television Interface Adapter (TIA) 1A, which was integrated into the Atari 2600 for generating the screen display, sound effects, and reading input controllers. Development of the TIA was led by Jay Miner, who also led the design of the custom chips for the Commodore Amiga computer later on.</p>
+
+                <h4>After this a lot more consoles graphic cards realeased. But let's talk for the computers.</h4>
+
+                <p>Released in 1995, the Mach64 notched a number of notable firsts. It became the first graphics adapter to be available for PC and Mac computers in the form of the Xclaim ($450 and $650 depending on onboard memory), and, along with S3's Trio, offered full-motion video playback acceleration.The Mach64 also ushered in ATI’s first pro graphics cards, the 3D Pro Turbo and 3D Pro Turbo+PC2TV, priced at a cool $599 for the 2MB option and $899 for the 4MB.</p>
+
+                <p>The following month saw a technology start-up called 3DLabs rise onto the scene, born when DuPont’s Pixel graphics division bought the subsidiary from its parent company, along with the GLINT 300SX processor capable of OpenGL rendering, fragment processing and rasterisation. Due to their high price the company's cards were initially aimed at the professional market. The Fujitsu Sapphire2SX 4MB retailed for $1600-$2000, while an 8MB ELSA GLoria 8 was $2600-$2850. The 300SX, however, was intended for the gaming market.</p>
+                <p>The Gaming GLINT 300SX of 1995 featured a much-reduced 2MB of memory. It used 1MB for textures and Z-buffer and the other for frame buffer, but came with an option to increase the VRAM for Direct3D compatibility for another $50 over the $349 base price. The card failed to make headway in an already crowded marketplace, but 3DLabs was already working on a successor in the Permedia series.S3 seemed to be everywhere at that time. The high-end OEM marked was dominated by the company's Trio64 chipsets that integrated DAC, a graphics controller, and clock synthesiser into a single chip. They also utilized a unified frame buffer and supported hardware video overlay (a dedicated portion of graphics memory for rendering video as the application requires). The Trio64 and its 32-bit memory bus sibling, the Trio32, were available as OEM units and standalone cards from vendors such as Diamond, ELSA, Sparkle, STB, Orchid, Hercules and Number Nine. Diamond Multimedia’s prices ranged from $169 for a ViRGE based card, to $569 for a Trio64+ based Diamond Stealth64 Video with 4MB of VRAM.</p>
+                <p>After that more progressed cards started coming up but they were all the same with some small exceptions of graphics cards that had extra features  the NV1 which is the first graphics card nvidia released which was the first graphics card with 3D redering.And of cource nvidia started releasing the first generations of graphics cards and continued releasing new genrations until today. Right now we are on the 4th generation of graphics cards .</p>
+
+            </div>
+
         </div>
 
     </body>
