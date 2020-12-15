@@ -81,3 +81,9 @@
     bottom:23px;
     right:150px;
 }
+.Disabled{
+    color: white;
+    cursor:default;
+    opacity: 1;
+    text-decoration: none;
+}
