@@ -6,6 +6,28 @@
         <script src="https://use.fontawesome.com/5f110314f1.js"></script>
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
         <style>
+
+            #next1{
+                position:absolute;
+                top: 530px;
+                right:250px;
+                font-size: 35px;
+                width:50px;
+                text-align: center;
+                padding: 10px;
+            }
+
+            #previous1{
+                position:absolute;
+                font-size: 50px;
+                top: 530px;
+                right:1100px;
+                font-size: 35px;
+
+                width:50px;
+                text-align: center;
+                padding: 10px;
+            }
             .contents{
                 margin-top: 20px;
                 width:1810px;
@@ -64,33 +86,19 @@
                 position: absolute;
                 top:0;
             }
-            .dot{
-                cursor: pointer;
-                height: 15px;
-                width: 15;
-                margin: 0 2px;
-                background-color: #bbb;
-                border-radius: 50%;
-                display: inline-block;
-                transition: 0.6s ease;
+            .FirstGenSlide{
+                list-style-type: none;
             }
-            .active, dot:hover{
-                background-color: #717171;
+
+            ul.FirstGenSlide li{
+                width:535px;
+                margin-left: auto;
+                margin-right: 300px;
+                display: none;
+                float:right;
             }
-            .fade{
-                -webkit-animation-name:fade;
-                -webkit-animation-duration:1.5s;
-                animation-name: fade;
-                animation-duration: 1.5s;
-            }
-            @-webkit-keyframes fade{
-                from{opacity: .4}
-                to {opacity:1}
-            }
-            @keyframes fade{
-                from {opacity: .4}
-                to {opacity: 1}
-            }
+
+
         </style>
 
     </head>
@@ -188,38 +196,37 @@
                 <br>
                 <li>16-bit (FP16) floating-point operations can be executed at twice the rate of 32-bit floating-point operations ("single precision")[24] and 64-bit floating-point operations ("double precision") executed at half the rate of 32-bit floating point operations (Maxwell 1/32 rate).</li>
             </ul>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="../../Images/gtx1050.jpg" style="width: 100%">
-                    <div class="text"> GTX 1050</div>
 
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="../../Images/gtx1060.jpg" style="width: 100%">
-                    <div class="text"> GTX 1060</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="../../Images/gtx1070.jpg" style="width: 100%">
-                    <div class="text">GTX 1070</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="../../Images/gtx1080.jpg" style="width: 100%">
-                    <div class="text">GTX 1080</div>
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <br>
-                <div style="text-align: center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                </div>
-            </div>
+
+
+
+
+            <ul class="FirstGenSlide">
+
+                <li class="FirstGItem">
+                    <h3>desc1</h3>
+                    <img src="../../Images/gtx1050.jpg">
+                </li>
+
+                <li class="FirstGItem">
+                    <h3> desc1</h3>
+                    <img src="../../Images/gtx1060.jpg">
+                </li>
+
+                <li class="FirstGItem">
+                    <h3>desc1</h3>
+                    <img src="../../Images/gtx1060.jpg">
+                </li>
+
+                <li class="FirstGItem">
+                    <h3>desc1</h3>
+                    <img src="../../Images/gtx1080.jpg">
+                </li>
+            </ul>
+
+            <a id="previous1" > &#8249;</a>
+            <a id="next1" > &#8250;</a>
+
 
             <h2>GeForce 20 series and 16 series</h2>
 
@@ -240,5 +247,41 @@
             <img src="../../Images/gtx3070.jpg"><img src="../../Images/gtx3080.jpg"><img src="../../Images/rtx3090.jpg">
         </div>
         <div class="footer"></div>
+        <script>
+
+            var CMG1=0;
+            var firstgenslideEls = document.getElementsByClassName("FirstGItem");
+            firstgenslideEls[CMG1].style.display="block";
+
+
+            var NextPlace = function()
+            {
+                firstgenslideEls[CMG1].style.display="none";
+                CMG1++;
+                if (CMG1===firstgenslideEls.length)
+                {
+                    CMG1=0;
+                }
+                firstgenslideEls[CMG1].style.display="block";
+            }
+
+            var PreviousPlace = function()
+            {
+                firstgenslideEls[CMG1].style.display="none";
+                CMG1--;
+                if (CMG1<0)
+                {
+                    CMG1=firstgenslideEls.length-1;
+                }
+                firstgenslideEls[CMG1].style.display="block";
+            }
+
+            var NextPlaceArrowEl = document.getElementById("next1");
+            var PreviousPlaceArrowEl = document.getElementById("previous1");
+
+            NextPlaceArrowEl.addEventListener("click",NextPlace);
+            PreviousPlaceArrowEl.addEventListener("click",PreviousPlace);
+
+        </script>
     </body>
 </html>
