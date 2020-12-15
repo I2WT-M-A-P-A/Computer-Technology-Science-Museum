@@ -1,16 +1,16 @@
-<!---Made by Aravanopoulos Argyrios Alexandros--->
-.dody{
-
+/*<!---Made by Aravanopoulos Argyrios Alexandros, Marios Tsiokas--->*/
+body{
+    font-size: 1.25em;
 }
 
 .contents {
-    width: 1600px;
+    width: 1810px;
     margin: auto;
     background: aqua;
 
 }
 .footer{
-    width:1600px;
+    width:1810px;
     margin:auto;
     background:red;
 }
@@ -27,7 +27,7 @@
 
 .navbar a {
     float: left;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     text-align: center;
     padding: 14px 13px;
