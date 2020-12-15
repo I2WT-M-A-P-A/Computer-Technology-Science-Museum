@@ -202,36 +202,6 @@
 
 
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="../../Images/gtx1060.jpg" style="width: 100%">
-                <div class="text"> GTX 1060</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="../../Images/gtx1070.jpg" style="width: 100%">
-                <div class="text">GTX 1070</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="../../Images/gtx1080.jpg" style="width: 100%">
-                <div class="text">GTX 1080</div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <br>
-            <div style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-
-
-
-
-
             <ul class="FirstGenSlide">
 
                 <li class="FirstGItem">
@@ -280,46 +250,46 @@
             <img src="../../Images/gtx3070.jpg"><img src="../../Images/gtx3080.jpg"><img src="../../Images/rtx3090.jpg">
         </div>
         <div class="footer">
-        <script>
+            <script>
 
-            var CMG1=0;
-            var firstgenslideEls = document.getElementsByClassName("FirstGItem");
-            firstgenslideEls[CMG1].style.display="block";
-
-
-            var NextPlace = function()
-            {
-                firstgenslideEls[CMG1].style.display="none";
-                CMG1++;
-                if (CMG1===firstgenslideEls.length)
-                {
-                    CMG1=0;
-                }
+                var CMG1=0;
+                var firstgenslideEls = document.getElementsByClassName("FirstGItem");
                 firstgenslideEls[CMG1].style.display="block";
-            }
 
-            var PreviousPlace = function()
-            {
-                firstgenslideEls[CMG1].style.display="none";
-                CMG1--;
-                if (CMG1<0)
+
+                var NextPlace = function()
                 {
-                    CMG1=firstgenslideEls.length-1;
+                    firstgenslideEls[CMG1].style.display="none";
+                    CMG1++;
+                    if (CMG1===firstgenslideEls.length)
+                    {
+                        CMG1=0;
+                    }
+                    firstgenslideEls[CMG1].style.display="block";
                 }
-                firstgenslideEls[CMG1].style.display="block";
-            }
 
-            var NextPlaceArrowEl = document.getElementById("next1");
-            var PreviousPlaceArrowEl = document.getElementById("previous1");
+                var PreviousPlace = function()
+                {
+                    firstgenslideEls[CMG1].style.display="none";
+                    CMG1--;
+                    if (CMG1<0)
+                    {
+                        CMG1=firstgenslideEls.length-1;
+                    }
+                    firstgenslideEls[CMG1].style.display="block";
+                }
 
-            NextPlaceArrowEl.addEventListener("click",NextPlace);
-            PreviousPlaceArrowEl.addEventListener("click",PreviousPlace);
+                var NextPlaceArrowEl = document.getElementById("next1");
+                var PreviousPlaceArrowEl = document.getElementById("previous1");
 
-        </script>
+                NextPlaceArrowEl.addEventListener("click",NextPlace);
+                PreviousPlaceArrowEl.addEventListener("click",PreviousPlace);
+
+            </script>
 
         </div>
 
-    <div class="footer"></div>
+        <div class="footer"></div>
 
 
 
