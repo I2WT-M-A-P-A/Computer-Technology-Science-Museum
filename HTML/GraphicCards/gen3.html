@@ -14,6 +14,82 @@
                 bottom:5px;
                 right:150px;
             }
+            img{
+                width: 300px;
+            }
+            {box-sizing: border-box}
+            .slideshow-container{
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            .mySlides{
+                display: none;
+            }
+            .prev, .next{
+                cursor:pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                padding:16px;
+                color:white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            .next{
+                right:0;
+                border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover{
+                background-color: rgba(0,0,0,0,8);
+            }
+            .text{
+                color:#f2f2f2;
+                font-size:15px;
+                padding:8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            .numbertext{
+                color:#f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top:0;
+            }
+            .dot{
+                cursor: pointer;
+                height: 15px;
+                width: 15;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: 0.6s ease;
+            }
+            .active, dot:hover{
+                background-color: #717171;
+            }
+            .fade{
+                -webkit-animation-name:fade;
+                -webkit-animation-duration:1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            @-webkit-keyframes fade{
+                from{opacity: .4}
+                to {opacity:1}
+            }
+            @keyframes fade{
+                from {opacity: .4}
+                to {opacity: 1}
+            }
         </style>
 
     </head>
@@ -112,23 +188,59 @@
                 <br>
                 <li>16-bit (FP16) floating-point operations can be executed at twice the rate of 32-bit floating-point operations ("single precision")[24] and 64-bit floating-point operations ("double precision") executed at half the rate of 32-bit floating point operations (Maxwell 1/32 rate).</li>
             </ul>
-            <h2>GeForce 20 series and 16 series</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../../Images/gtx1050.jpg" style="width: 100%">
+                    <div class="text"> GTX 1050</div>
 
-            <p>In August 2018, Nvidia announced the GeForce successor to Pascal. The new microarchitecture name was revealed as "Turing" at the Siggraph 2018 conference. This new GPU microarchitecture is aimed to accelerate the real-time ray tracing support and AI Inferencing. It features a new Ray Tracing unit (RT Core) which can dedicate processors to the ray tracing in hardware. It supports the DXR extension in Microsoft DirectX 12. Nvidia claims the new architecture is up to 6 times faster than the older Pascal architecture. A whole new Tensor core design since Volta introduces AI deep learning acceleration, which allows the utilisation of DLSS (Deep Learning Super Sampling), a new form of anti-aliasing that uses AI to provide crisper imagery with less impact on performance.It also changes its integer execution unit which can execute in parallel with the floating point data path. A new unified cache architecture which doubles its bandwidth compared with previous generations was also announced.</p>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../../Images/gtx1060.jpg" style="width: 100%">
+                    <div class="text"> GTX 1060</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../../Images/gtx1070.jpg" style="width: 100%">
+                    <div class="text">GTX 1070</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../../Images/gtx1080.jpg" style="width: 100%">
+                    <div class="text">GTX 1080</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
 
-            <p>The new GPUs were revealed as the Quadro RTX 8000, Quadro RTX 6000 and Quadro RTX 5000. The high end Quadro RTX 8000 features 4,608 CUDA cores and 576 Tensor cores with 48GB of VRAM. Later during the Gamescom press conference, NVIDIA's CEO Jensen Huang, unveiled the new GeForce RTX series with RTX 2080 Ti, 2080, and 2070 that will use the Turing architecture. The first Turing cards were slated to ship to consumers on September 20, 2018. Nvidia announced the RTX 2060 on January 6, 2019 at CES 2019.</p>
+        <h2>GeForce 20 series and 16 series</h2>
 
-            <p>On July 2, 2019, Nvidia announced the GeForce RTX Super line of cards, a 20 series refresh which comprises higher-spec versions of the RTX 2060, 2070 and 2080. The RTX 2070 and 2080 were discontinued.</p>
+        <p>In August 2018, Nvidia announced the GeForce successor to Pascal. The new microarchitecture name was revealed as "Turing" at the Siggraph 2018 conference. This new GPU microarchitecture is aimed to accelerate the real-time ray tracing support and AI Inferencing. It features a new Ray Tracing unit (RT Core) which can dedicate processors to the ray tracing in hardware. It supports the DXR extension in Microsoft DirectX 12. Nvidia claims the new architecture is up to 6 times faster than the older Pascal architecture. A whole new Tensor core design since Volta introduces AI deep learning acceleration, which allows the utilisation of DLSS (Deep Learning Super Sampling), a new form of anti-aliasing that uses AI to provide crisper imagery with less impact on performance.It also changes its integer execution unit which can execute in parallel with the floating point data path. A new unified cache architecture which doubles its bandwidth compared with previous generations was also announced.</p>
 
-            <p>In February 2019, Nvidia announced the GeForce 16 series. It is based on the same Turing architecture used in the GeForce 20 series, but omitting the Tensor (AI) and RT (ray tracing) cores unique to the latter in favour of providing a more affordable graphics solution for gamers while still attaining a higher performance compared to respective cards of the previous GeForce generations.</p>
+        <p>The new GPUs were revealed as the Quadro RTX 8000, Quadro RTX 6000 and Quadro RTX 5000. The high end Quadro RTX 8000 features 4,608 CUDA cores and 576 Tensor cores with 48GB of VRAM. Later during the Gamescom press conference, NVIDIA's CEO Jensen Huang, unveiled the new GeForce RTX series with RTX 2080 Ti, 2080, and 2070 that will use the Turing architecture. The first Turing cards were slated to ship to consumers on September 20, 2018. Nvidia announced the RTX 2060 on January 6, 2019 at CES 2019.</p>
 
-            <p>Like the RTX Super refresh, Nvidia on October 29, 2019 announced the GTX 1650 and 1660 Super cards, which replaced their non-Super counterparts.</p>
+        <p>On July 2, 2019, Nvidia announced the GeForce RTX Super line of cards, a 20 series refresh which comprises higher-spec versions of the RTX 2060, 2070 and 2080. The RTX 2070 and 2080 were discontinued.</p>
 
-            <h2>GeForce 30 series</h2>
+        <p>In February 2019, Nvidia announced the GeForce 16 series. It is based on the same Turing architecture used in the GeForce 20 series, but omitting the Tensor (AI) and RT (ray tracing) cores unique to the latter in favour of providing a more affordable graphics solution for gamers while still attaining a higher performance compared to respective cards of the previous GeForce generations.</p>
 
-            <p>Nvidia officially announced at the GeForce Special Event that the successor to GeForce 20 series will be the 30 series. The GeForce Special Event introduced took place on September 1, 2020 and set September 17 as the official release date for the 3080 GPU, September 24 as the release date for the 3090 GPU and October for the 3070 GPU.</p>
+        <p>Like the RTX Super refresh, Nvidia on October 29, 2019 announced the GTX 1650 and 1660 Super cards, which replaced their non-Super counterparts.</p>
+
+
+        <h2>GeForce 30 series</h2>
+
+        <p>Nvidia officially announced at the GeForce Special Event that the successor to GeForce 20 series will be the 30 series. The GeForce Special Event introduced took place on September 1, 2020 and set September 17 as the official release date for the 3080 GPU, September 24 as the release date for the 3090 GPU and October for the 3070 GPU.</p>
+        <img src="../../Images/gtx3070.jpg"><img src="../../Images/gtx3080.jpg"><img src="../../Images/rtx3090.jpg">
 
         </div>
-        <div class="footer"></div>
-             </body>
-        </html>
+    <div class="footer"></div>
+    </body>
+</html>
