@@ -10,7 +10,9 @@ body{
     width: 1600px;
     margin: auto;
     background: aqua;
-
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: -28px;
 }
 .footer{
     width:1600px;
