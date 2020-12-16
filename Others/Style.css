@@ -1,16 +1,21 @@
-/*<!---Made by Aravanopoulos Argyrios Alexandros, Marios Tsiokas--->*/
+/*<!---Made by Aravanopoulos Argyrios Alexandros, Marios Tsiokas,Alvanos Anastasios--->*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
 body{
     font-size: 1.25em;
+    font-family: "Roboto", sans-serif;
 }
 
 .contents {
-    width: 1810px;
+    width: 1600px;
     margin: auto;
     background: aqua;
-
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: -28px;
 }
 .footer{
-    width:1810px;
+    width:1600px;
     margin:auto;
     background:red;
 }
@@ -27,7 +32,7 @@ body{
 
 .navbar a {
     float: left;
-    font-size: 14px;
+    font-size: 12px;
     color: white;
     text-align: center;
     padding: 14px 13px;
