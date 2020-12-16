@@ -1,6 +1,9 @@
 /*<!---Made by Aravanopoulos Argyrios Alexandros, Marios Tsiokas,Alvanos Anastasios--->*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
 body{
     font-size: 1.25em;
+    font-family: "Roboto", sans-serif;
 }
 
 .contents {
