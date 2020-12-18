@@ -3,8 +3,12 @@
 
 body{
     font-size: 1.25em;
+<<<<<<< HEAD
+    font-family: "roboto", sans-serif;
+=======
     font-family: "Roboto", sans-serif;
     background-image: url(../Images/background.png)
+>>>>>>> origin/main
 }
 
 .contents {
