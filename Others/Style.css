@@ -3,7 +3,12 @@
 
 body{
     font-size: 1.25em;
+<<<<<<< HEAD
     font-family: "roboto", sans-serif;
+=======
+    font-family: "Roboto", sans-serif;
+    background-image: url(../Images/background.png)
+>>>>>>> origin/main
 }
 
 .contents {
@@ -13,6 +18,7 @@ body{
     padding-left: 2px;
     padding-right: 2px;
     margin-top: -28px;
+    background-image: url("../Images/19366.jpg")
 }
 .footer{
     width:1600px;
