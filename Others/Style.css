@@ -17,9 +17,9 @@ body{
     background-image: url("../Images/19366.jpg")
 }
 .footer{
-    width:1600px;
+    width:1603px;
     margin:auto;
-    background:red;
+    background:aqua;
 }
 
 .navbar {
@@ -91,7 +91,7 @@ body{
 }
 .arrow{
     position:fixed;
-    bottom:23px;
+    bottom:27px;
     right:150px;
 }
 .Disabled{
