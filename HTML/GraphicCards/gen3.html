@@ -2,22 +2,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <script src="https://use.fontawesome.com/5f110314f1.js"></script>
         <link rel="stylesheet" type="text/css" href="../../Others/Style.css">
         <title>Generation 3</title>
         <style>
 
-            #next1{
+            #nextBtn{
                 position:absolute;
                 top: 760px;
-                right:650px;
+                right:750px;
                 font-size: 45px;
                 width:50px;
                 text-align: center;
             }
 
-            #previous1{
+            #previousBtn{
                 position:absolute;
                 font-size: 50px;
                 top: 760px;
@@ -33,11 +32,6 @@
             }
             img{
                 width: 300px;
-            }
-            .slideshow-container{
-                max-width: 1000px;
-                position: relative;
-                margin: auto;
             }
 
             .text{
@@ -56,24 +50,15 @@
                 position: absolute;
                 top:0;
             }
-            .FirstGenSlide{
+            .GPUs{
                 list-style-type: none;
             }
 
-            ul.FirstGenSlide li{
+            ul.GPUs li{
                 width:535px;
                 margin-left: auto;
-                margin-right: 300px;
+                margin-right: auto;
                 display: none;
-                float:right;
-            }
-            .g20{
-                margin-top: 300px;
-            }
-            ul.FirstGenSlide li{
-                margin-right: -570px;
-                margin-left: auto;
-                width:100%;
             }
             .warning{
                 color:red;
@@ -88,7 +73,7 @@
         <div class="navbar">
             <a href="../../index.html">Home</a>
             <div class="dropdown">
-                <button class="dropbtn"><a href="">Evolution of storage media</a></button>
+                <button class="dropbtn"><a href="" class="Disabled" >Evolution of storage media</a></button>
                 <div class="dropdown-content">
                     <a href="../StorageMedias/FloppyDisks.html">Floppy Disks</a>
                     <a href="../StorageMedias/Harddrives.html">Hard Drives</a>
@@ -108,13 +93,14 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../EvolutionOfComputers/EvolutionOfComputers.html">Evolution of Computers</a></button>
+                <button class="dropbtn"><a href="" class="Disabled">Evolution of Computers</a></button>
                 <div class="dropdown-content">
-                    <a href="../EvolutionOfComputers/ENIAC.html">Eniac</a>
+                    <a href="../EvolutionOfComputers/EvolutionOfComputers.html">The Dawn Of Cumputes</a>
+                    <a href="../EvolutionOfComputers/ENIAC.html">ENIAC</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../CPU/CPU.html">Evolution of CPUs</a></button>
+                <button class="dropbtn"><a href="" class="Disabled">Evolution of CPUs</a></button>
                 <div class="dropdown-content">
                     <a href="../CPU/CPU.html">CPUs</a>
                     <a href="../CPU/AMDprocessors.html">AMD CPUs</a>
@@ -123,21 +109,22 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../" class="Disabled">Evolution of DOS/Windows</a></button>
+                <button class="dropbtn"><a href="" class="Disabled">Evolution of DOS/Windows</a></button>
                 <div class="dropdown-content">
-                    <a href="../../HTML/EvolutionOfMicrosoftOS/MS-DOS.html">MS-DOS System</a>
+                    <a href="../EvolutionOfMicrosoftOS/MS-DOS.html">MS-DOS System</a>
+                    <a href="../EvolutionOfMicrosoftOS/Windows.html">Windows</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../" class="Disabled">Evolution of Unix/Linux</a></button>
+                <button class="dropbtn"><a href="" class="Disabled">Evolution of Unix/Linux</a></button>
                 <div class="dropdown-content">
-                    <a href="../linux%2520O.S/Unix.html">Unix</a>
-                    <a href="../linux%2520O.S/linuxOS.html">Linux</a>
-                    <a href="../linux%2520O.S/LinuxDistros.html">Linux Distros</a>
+                    <a href="../linux/Unix.html">Unix</a>
+                    <a href="../linux/linuxOS.html">Linux</a>
+                    <a href="../linux/LinuxDistros.html">Linux Distros</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../" class="Disabled">Evolution of Malware</a></button>
+                <button class="dropbtn"><a href="" class="Disabled">Evolution of Malware</a></button>
                 <div class="dropdown-content">
                     <a href="../Malicious%20software/Worms.html">Computers worms</a>
                     <a href="../Malicious%20software/VirMal.html">Viruses/Malware</a>
@@ -146,15 +133,17 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../" class="Disabled">Mac OS</a></button>
+                <button class="dropbtn"><a href="" class="Disabled">Mac OS</a></button>
                 <div class="dropdown-content">
                     <a href="../MacOs/macos.html">MacOS</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn"><a href="../" class="Disabled">About us</a></button>
+                <button class="dropbtn"><a href="" class="Disabled">About us</a></button>
                 <div class="dropdown-content">
-                    <a></a>
+                    <a href="../Students/AravanopoulosArgyris.html">Aravanopoulos Argyris</a>
+                    <a href="../Students/TsiokasMarios.html">Tsiokas Marios</a>
+                    <a href="../AlvanosAnastasios.html">Alvanos Anastasis</a>
                 </div>
             </div>
             <a href="../References.html">References</a>
@@ -181,32 +170,32 @@
 
 
             <div class="galery">
-                <ul class="FirstGenSlide">
+                <ul class="GPUs">
 
-                    <li class="FirstGItem">
+                    <li class="GPUItem">
                         <h3>GTX 1050</h3>
                         <img src="../../Images/gtx1050.jpg">
                     </li>
 
-                    <li class="FirstGItem">
+                    <li class="GPUItem">
                         <h3> GTX 1060</h3>
                         <img src="../../Images/gtx1060.jpg">
                     </li>
 
-                    <li class="FirstGItem">
+                    <li class="GPUItem">
                         <h3>GTX 1070</h3>
                         <img src="../../Images/gtx1070.jpg">
                     </li>
 
-                    <li class="FirstGItem">
+                    <li class="GPUItem">
                         <h3>GTX 1080</h3>
                         <img src="../../Images/gtx1080.jpg">
                     </li>
                 </ul>
             </div>
 
-            <a id="previous1" > &#8249;</a>
-            <a id="next1" > &#8250;</a>
+            <a id="previousBtn" > &#8249;</a>
+            <a id="nextBtn" > &#8250;</a>
 
             <div class="g20">
                 <h2>GeForce 20 series and 16 series</h2>
@@ -234,7 +223,7 @@
             <script>
 
                 var CMG1=0;
-                var firstgenslideEls = document.getElementsByClassName("FirstGItem");
+                var firstgenslideEls = document.getElementsByClassName("GPUItem");
                 firstgenslideEls[CMG1].style.display="block";
 
 
@@ -260,8 +249,8 @@
                     firstgenslideEls[CMG1].style.display="block";
                 }
 
-                var NextPlaceArrowEl = document.getElementById("next1");
-                var PreviousPlaceArrowEl = document.getElementById("previous1");
+                var NextPlaceArrowEl = document.getElementById("nextBtn");
+                var PreviousPlaceArrowEl = document.getElementById("previousBtn");
 
                 NextPlaceArrowEl.addEventListener("click",NextPlace);
                 PreviousPlaceArrowEl.addEventListener("click",PreviousPlace);
@@ -271,9 +260,9 @@
         </div>
 
 
-        <div class="footer"></div>
+        <div class="footer">
 
-        This website was created by the new and up and coming web development team M.A.P.A.
-
+            This website was created by the new and up and coming web development team M.A.P.A.
+        </div>
     </body>
 </html>
