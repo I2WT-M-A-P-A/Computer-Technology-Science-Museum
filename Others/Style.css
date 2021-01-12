@@ -100,3 +100,7 @@ body{
     opacity: 1;
     text-decoration: none;
 }
+
+h1.center{
+    text-align: center;
+}
